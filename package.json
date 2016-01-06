@@ -1,0 +1,54 @@
+{
+  "name": "secas-story-map",
+  "version": "1.0.0",
+  "description": "A story map of conservation projects",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-js": "browserify -t jadeify app/js/app.js | uglifyjs -mc > dist/js/bundle.js",
+    "watch-js": "watchify -t jadeify app/js/app.js -o dist/js/bundle.js -dv",
+    "watch-sass": "node-sass -w app/scss/main.scss dist/css/main.css",
+    "build-sass": "node-sass --output-style compressed app/scss/main.scss dist/css/main.css",
+    "shrink-json": "json-minify app/data/ > dist/data/",
+    "watch-json": "watch 'npm run shrink-json' app/data/",
+    "preshrink-img": "rimraf dist/images/*",
+    "shrink-img": "imagemin app/images/**/* dist/images/ -p",
+    "watch-img": "watch 'npm run shrink-img' app/images",
+    "serve": "browser-sync start --server dist --files 'dist/**/*'",
+    "build": "npm run styles & npm run build-js",
+    "start": "npm run watch-img & npm run watch-sass & npm run watch-js & npm run serve"
+  },
+  "keywords": [
+    "Story Map",
+    "SECAS",
+    "Southeast Conservation Adaptation Strategy",
+    "USFWS",
+    "Landscape Conservation Cooperative",
+    "LCC"
+  ],
+  "author": "Roy Hewitt",
+  "license": "SAX-PD",
+  "devDependencies": {
+    "browser-sync": "^2.11.0",
+    "browserify": "^12.0.1",
+    "imagemin": "^4.0.0",
+    "imagemin-cli": "^2.1.0",
+    "json-minify": "^1.0.0",
+    "node-sass": "^3.4.2",
+    "rimraf": "^2.5.0",
+    "uglifyjs": "^2.4.10",
+    "watch": "^0.17.1",
+    "watchify": "^3.6.1"
+  },
+  "dependencies": {
+    "events": "^1.1.0",
+    "imagesloaded": "^4.0.0",
+    "jade": "^1.11.0",
+    "jadeify": "^4.5.0",
+    "leaflet": "^1.0.0-beta.2",
+    "lodash.defaults": "^3.1.2",
+    "lodash.find": "^3.2.1",
+    "randomcolor": "^0.4.3",
+    "xhr": "^2.2.0"
+  }
+}

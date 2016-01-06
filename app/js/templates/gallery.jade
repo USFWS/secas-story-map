@@ -1,0 +1,7 @@
+div.gallery
+  button.gallery-toggle &#9660; Gallery
+  ul.gallery-list
+    each item in galleryItems
+      li.gallery-item(data-name=item.properties.name)
+        img(src='http://placehold.it/200x200' alt=Placeholder image)
+        p= item.properties.name

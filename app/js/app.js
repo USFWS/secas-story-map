@@ -1,0 +1,32 @@
+(function () {
+  'use strict';
+
+  var map = require('./map');
+  var gallery = require('./gallery');
+  var data = require('./data-access');
+  var emitter = require('./mediator');
+
+  var projects;
+
+  data.init('./data/projects.json');
+
+  emitter.on('projects:loaded', function (projectData) {
+    projects = projectData;
+
+    map.init({
+      element: 'map',
+      center: [37.174019, -82.604078],
+      data: projects
+    });
+
+    gallery.init({
+      data: projects.features
+    });
+
+  });
+
+  emitter.on('lccs:loaded', function (lccs) {
+    map.addLayer(lccs, 'area_names');
+  });
+
+})();
