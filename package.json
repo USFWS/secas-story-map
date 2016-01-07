@@ -15,7 +15,7 @@
     "shrink-img": "imagemin app/images/**/* dist/images/ -p",
     "watch-img": "watch 'npm run shrink-img' app/images",
     "serve": "browser-sync start --server dist --files 'dist/**/*'",
-    "build": "npm run styles & npm run build-js",
+    "build": "npm run shrink-img & npm run build-sass & npm run build-js",
     "start": "npm run watch-img & npm run watch-sass & npm run watch-js & npm run serve"
   },
   "keywords": [
