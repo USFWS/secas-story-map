@@ -8,7 +8,7 @@
 
   var projects;
 
-  data.init('./data/projects.json');
+  data.init('./data/projects.js');
 
   emitter.on('projects:loaded', function (projectData) {
     projects = projectData;

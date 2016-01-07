@@ -13,7 +13,7 @@
       emitter.emit('projects:loaded', projects);
     });
 
-    xhr.get('./data/lccs.geojson', function (err, res) {
+    xhr.get('./data/lccs.js', function (err, res) {
       lccs = JSON.parse(res.body);
       emitter.emit('lccs:loaded', lccs);
     });
