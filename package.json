@@ -51,6 +51,7 @@
     "watchify": "^3.6.1"
   },
   "dependencies": {
+    "classlist-polyfill": "^1.0.2",
     "events": "^1.1.0",
     "imagesloaded": "^4.0.0",
     "jade": "^1.11.0",
