@@ -4,17 +4,27 @@ This interactive story map highlights several conservation projects that fall un
 
 ## Development
 
-To run a development server first install project dependencies:
+To ease development we use npm scripts to compile JS with browserify/watchify, compile sass to css, optimize images, etc:
+
+First, install the project dependencies:
 
 `npm install`
 
-To ease development we use npm scripts to compile JS with browserify/watchify, compile sass to css, optimize images, etc:
+To kick off the development server and all pre-requisite tasks:
 
 `npm start`
 
 To build a production ready version of the app use:
 
 `npm run build`
+
+To publish a production ready demo to GitHub Pages:
+
+`npm run publish:demo`
+
+To visualize packages contributing to bundle file size:
+
+`npm run inspect:bundle`
 
 ### License
 
