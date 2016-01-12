@@ -42,14 +42,13 @@
   function addMarkers() {
     var markers = L.geoJson(options.data, {
       onEachFeature: function(feature, layer) {
-        layer.on({ click: onMarkerClick })
+        layer.on({ click: onMarkerClick });
       }
     }).addTo(map);
-    map.fitBounds(markers.getBounds());
   }
 
   function addLayer(geojson, popupContent) {
-    L.geoJson(geojson, {
+    var lccs = L.geoJson(geojson, {
       onEachFeature: function(feature, layer) {
         layer.bindPopup(feature.properties[popupContent] + " LCC");
       },
@@ -57,6 +56,7 @@
         return { color: randomColor() };
       }
     }).addTo(map);
+    map.fitBounds(lccs.getBounds());
   }
 
   function onMarkerClick(e) {
