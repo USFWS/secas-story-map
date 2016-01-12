@@ -3,6 +3,8 @@
 
   var imagesLoaded = require('imagesloaded');
 
+  var ProjectService = require('./data-access');
+
   var _ = require('./util')._;
   var template = require('../templates/gallery.jade');
   var emitter = require('./mediator');
@@ -25,7 +27,6 @@
     options.close.innerHTML = '&#9650;';
     options.list = dom.create('ul', 'gallery-list', options.el);
     dom.addClass(options.el, 'gallery-container');
-    console.log(options);
   }
 
   function registerHandlers() {
@@ -59,14 +60,13 @@
   }
 
   function itemHandler(e) {
-    console.log(e.target);
     var el = e.target;
     var projectName;
     while (el && el.tagName !== 'LI') {
        el = el.parentNode;
     }
     projectName = el.getAttribute('data-name');
-    emitter.emit('project:click', data.getProject(projectName));
+    emitter.emit('project:click', ProjectService.getProject(projectName));
   }
 
   module.exports.init = init;
