@@ -6,46 +6,56 @@
   var _ = require('./util')._;
   var template = require('../templates/gallery.jade');
   var emitter = require('./mediator');
-  var data = require('./data-access');
+  var dom = require('./util').dom;
 
-  var options;
-  var defaults = {
-    el: document.createElement('section')
-  };
+  var options,
+      gallery = false;
 
   function init(opts) {
-    options = _.defaults({}, opts, defaults);
-    options.el.classList.add('gallery-hidden', 'gallery-container');
-    document.body.appendChild(options.el);
+    options = opts;
+    createGallery();
     render();
     imagesLoaded(options.el, show);
     registerHandlers();
   }
 
-  function registerHandlers() {
-    var close = document.querySelector('.gallery-toggle');
-    close.addEventListener('click', toggle);
+  function createGallery() {
+    options.el = dom.create('section', 'gallery-hidden', document.body);
+    options.close = dom.create('button', 'gallery-toggle', options.el);
+    options.list = dom.create('ul', 'gallery-list', options.el);
+    dom.addClass(options.el, 'gallery-container');
+    console.log(options);
+  }
 
-    var gallery = options.el.querySelector('.gallery-list');
-    gallery.addEventListener('click', itemHandler);
+  function registerHandlers() {
+    options.close.addEventListener('click', toggle);
+    options.list.addEventListener('click', itemHandler);
   }
 
   function render() {
-    options.el.innerHTML = template({
+    options.list.innerHTML = template({
       galleryItems: options.data
     });
   }
 
   function show() {
+    gallery = true;
     options.el.classList.remove('gallery-hidden');
   }
 
   function hide() {
+    gallery = false;
     options.el.classList.add('gallery-hidden');
   }
 
   function toggle() {
-    options.el.classList.toggle('gallery-hidden');
+    if (gallery) {
+      gallery = false;
+      hide();
+    } else {
+      gallery = true;
+      show();
+    }
   }
 
   function itemHandler(e) {
@@ -61,4 +71,5 @@
   module.exports.init = init;
   module.exports.show = show;
   module.exports.hide = hide;
+  module.exports.toggle = toggle;
 })();
