@@ -6,7 +6,7 @@
   var _ = require('./util')._;
   var emitter = require('./mediator');
 
-  L.Icon.Default.imagePath = '../images';
+  L.Icon.Default.imagePath = './images';
 
   var map, options;
   var defaults = {
