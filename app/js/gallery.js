@@ -22,6 +22,7 @@
   function createGallery() {
     options.el = dom.create('section', 'gallery-hidden', document.body);
     options.close = dom.create('button', 'gallery-toggle', options.el);
+    options.close.innerHTML = '&#9650;';
     options.list = dom.create('ul', 'gallery-list', options.el);
     dom.addClass(options.el, 'gallery-container');
     console.log(options);
@@ -41,24 +42,24 @@
   function show() {
     gallery = true;
     options.el.classList.remove('gallery-hidden');
+    options.close.innerHTML = '&#9660;';
   }
 
   function hide() {
     gallery = false;
     options.el.classList.add('gallery-hidden');
+    options.close.innerHTML = '&#9650;';
   }
 
   function toggle() {
-    if (gallery) {
-      gallery = false;
+    if (gallery)
       hide();
-    } else {
-      gallery = true;
+    else
       show();
-    }
   }
 
   function itemHandler(e) {
+    console.log(e.target);
     var el = e.target;
     var projectName;
     while (el && el.tagName !== 'LI') {
