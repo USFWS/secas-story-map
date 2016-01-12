@@ -4,7 +4,7 @@
   var imagesLoaded = require('imagesloaded');
 
   var _ = require('./util')._;
-  var template = require('./templates/gallery.jade');
+  var template = require('../templates/gallery.jade');
   var emitter = require('./mediator');
   var data = require('./data-access');
 
