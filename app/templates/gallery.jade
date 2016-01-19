@@ -1,4 +1,5 @@
 each item in galleryItems
-  li.gallery-item(data-name=item.properties.name)
-    img(src='http://placehold.it/150x150' alt="Placeholder image")
-    p= item.properties.name
+  li.gallery-item(data-name=item.properties.title)
+    div.teaser
+      img(src="./images/photos/thumbnail/" + item.properties.photo, alt="Placeholder image")
+      p= item.properties.title

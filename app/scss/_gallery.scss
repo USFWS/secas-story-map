@@ -24,6 +24,10 @@
 .gallery-item {
   display: inline-block;
   margin-right: 15px;
+
+  img {
+    margin: auto;
+  }
 }
 
 .gallery-toggle {
@@ -34,4 +38,14 @@
   position: absolute;
   top: -23px;
   left: 5px;
+}
+
+.teaser {
+  margin: auto;
+  max-width: 200px;
+  text-align: center;
+
+  p {
+    white-space: normal;
+  }
 }
