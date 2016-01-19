@@ -8,7 +8,7 @@
 
   L.Icon.Default.imagePath = './images';
 
-  var map, options;
+  var map, options, geographies, geogLayer;
   var defaults = {
     zoom: 5,
     element: 'map'
@@ -19,11 +19,12 @@
     createMap();
     addBasemap();
     registerHandlers();
-    if (options.data) addMarkers();
+    if (options.data) addLayers();
   }
 
   function registerHandlers() {
-    emitter.on('project:click', flyToOffice);
+    emitter.on('project:click', handleProjectClick);
+    emitter.on('geographies:loaded', saveGeographies);
   }
 
   function createMap() {
@@ -39,28 +40,53 @@
     }).addTo(map);
   }
 
-  function addMarkers() {
+  function addLayers() {
+    geogLayer = L.layerGroup().addTo(map);
+
     var markers = L.geoJson(options.data, {
       onEachFeature: function(feature, layer) {
         layer.on({ click: onMarkerClick });
       }
     }).addTo(map);
+
+    map.fitBounds(markers.getBounds());
   }
 
-  function addLayer(geojson, popupContent) {
-    var lccs = L.geoJson(geojson, {
-      onEachFeature: function(feature, layer) {
-        layer.bindPopup(feature.properties[popupContent] + " LCC");
-      },
-      style: function() {
-        return { color: randomColor() };
-      }
-    }).addTo(map);
-    map.fitBounds(lccs.getBounds());
+  function saveGeographies(geog) {
+    geographies = geog;
   }
+
+  // function addLayer(geojson, popupContent) {
+  //   var lccs = L.geoJson(geojson, {
+  //     onEachFeature: function(feature, layer) {
+  //       layer.bindPopup(feature.properties[popupContent] + " LCC");
+  //     },
+  //     style: function() {
+  //       return { color: randomColor() };
+  //     }
+  //   }).addTo(map);
+  //   map.fitBounds(lccs.getBounds());
+  // }
 
   function onMarkerClick(e) {
     emitter.emit('project:click', e.target.feature);
+  }
+
+  function handleProjectClick(office) {
+    displayGeography(office.properties.geography);
+    flyToOffice(office);
+  }
+
+  function displayGeography(geography) {
+    geogLayer.clearLayers();
+    var currentGeog = L.geoJson(geographies, {
+      filter: function (feature) {
+        console.log(feature.properties.name, geography);
+        return feature.properties.name === geography;
+      }
+    });
+    geogLayer.addLayer(currentGeog);
+    console.log(geogLayer);
   }
 
   function flyToOffice(office) {
@@ -70,5 +96,4 @@
   }
 
   module.exports.init = init;
-  module.exports.addLayer = addLayer;
 })();
