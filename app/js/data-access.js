@@ -29,7 +29,7 @@
 
   function getProject(projectName) {
     return _.find(projects.features, function (project) {
-      return project.properties.name.toLowerCase() === projectName.toLowerCase();
+      return project.properties.title.toLowerCase() === projectName.toLowerCase();
     });
   }
 
