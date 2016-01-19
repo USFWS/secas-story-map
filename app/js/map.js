@@ -56,18 +56,6 @@
     geographies = geog;
   }
 
-  // function addLayer(geojson, popupContent) {
-  //   var lccs = L.geoJson(geojson, {
-  //     onEachFeature: function(feature, layer) {
-  //       layer.bindPopup(feature.properties[popupContent] + " LCC");
-  //     },
-  //     style: function() {
-  //       return { color: randomColor() };
-  //     }
-  //   }).addTo(map);
-  //   map.fitBounds(lccs.getBounds());
-  // }
-
   function onMarkerClick(e) {
     emitter.emit('project:click', e.target.feature);
   }
@@ -86,7 +74,6 @@
       }
     });
     geogLayer.addLayer(currentGeog);
-    console.log(geogLayer);
   }
 
   function flyToOffice(office) {
