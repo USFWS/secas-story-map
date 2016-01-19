@@ -53,10 +53,7 @@
   }
 
   function toggle() {
-    if (gallery)
-      hide();
-    else
-      show();
+    (gallery) ? hide() : show();
   }
 
   function itemHandler(e) {
