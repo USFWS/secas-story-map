@@ -13,14 +13,14 @@
         "caption": "APPLCC Energy Mapping",
         "credit": "",
         "theme": "Smart Planning",
-        "geography": "Full Extent",
+        "geography": "applcc",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -82.490683,
-          37.95403
+          -82.4907,
+          37.954
         ]
       }
     },
@@ -36,14 +36,14 @@
         "caption": "APPLCC Lynn Camp Prong Smoky NP",
         "credit": "",
         "theme": "Smart Planning",
-        "geography": "Sub-geography",
+        "geography": "ebtjv",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.187897,
-          36.596201
+          -81.1879,
+          36.5962
         ]
       }
     },
@@ -59,7 +59,7 @@
         "caption": "APPLCC TRB Partnership",
         "credit": "",
         "theme": "Building on Existing Partnerships",
-        "geography": "Sub-geography",
+        "geography": "tennessee-river-basin",
         "shapefiles": "Delivered"
       },
       "geometry": {
@@ -82,14 +82,37 @@
         "caption": "CARLCC Protected Marine and Terrestrial Areas",
         "credit": "CALCC",
         "theme": "",
-        "geography": "Full Extent",
+        "geography": "calcc",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -65.322514,
-          17.908215
+          -65.3225,
+          17.9082
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "lcc": "Caribbean",
+        "title": "Landscape Conservation Design for Caribbean Cay Systems",
+        "description": "International partnership works to develop a landscape conservation design for the network of offshore cay systems in the U.S. and British Caribbean  ",
+        "location": "Between the US and British Virgin Islands in the Atlantic Ocean or Caribbean Sea.",
+        "url": "http://caribbeanlcc.databasin.org/groups/67a684972a3b461c872c9bc5a23790c4/profile ",
+        "photo": "car-lcc-cay-systems.jpg",
+        "caption": "CARLCC Cay Systems",
+        "credit": "CALCC",
+        "theme": "",
+        "geography": "calcc",
+        "shapefiles": "Delivered"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.6966,
+          18.2509
         ]
       }
     },
@@ -111,8 +134,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -66.057314,
-          18.395239
+          -66.0573,
+          18.3952
         ]
       }
     },
@@ -128,14 +151,14 @@
         "caption": "GCPLCC Nobo",
         "credit": "Steve Maslowski, USFWS",
         "theme": "Smart Planning",
-        "geography": "Full Extent",
+        "geography": "gcplcc",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -97.451845,
-          33.174616
+          -97.4518,
+          33.1746
         ]
       }
     },
@@ -151,14 +174,14 @@
         "caption": "Atchafalaya basin flooded",
         "credit": "Y. Allen",
         "theme": "Smart Planning/Achieving Conservation",
-        "geography": "Full Extent (Rivers)",
+        "geography": "gcpolcc",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -90.88733,
-          34.127875
+          -90.8873,
+          34.1279
         ]
       }
     },
@@ -174,14 +197,14 @@
         "caption": "Grand Bay march edge",
         "credit": "USFWS",
         "theme": "Smart Planning",
-        "geography": "Sub-geography",
+        "geography": "wetland-migration",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -87.502048,
-          30.303099
+          -87.502,
+          30.3031
         ]
       }
     },
@@ -197,14 +220,14 @@
         "caption": "Interior least tern",
         "credit": "USFWS",
         "theme": "Saving Dollars & Improving Efficiencies/ Buildling on Existing Partnerships",
-        "geography": "Greater than Full Extent",
+        "geography": "least-tern",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -94.608183,
-          36.49273
+          -94.6082,
+          36.4927
         ]
       }
     },
@@ -226,8 +249,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.88397,
-          28.341338
+          -80.884,
+          28.3413
         ]
       }
     },
@@ -243,14 +266,14 @@
         "caption": "PFLCC FLorida Critical Lands and Water Identification Map",
         "credit": "",
         "theme": "Building on Existing Partnerships",
-        "geography": "Full Extent",
+        "geography": "pflcc",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.281309,
-          27.832705
+          -81.2813,
+          27.8327
         ]
       }
     },
@@ -272,8 +295,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.281309,
-          27.832705
+          -81.2813,
+          27.8327
         ]
       }
     },
@@ -289,14 +312,14 @@
         "caption": "PFLCC Great egret and tower at Big Bend WMA",
         "credit": "FWC",
         "theme": "Smart Planning",
-        "geography": "Full Extent",
+        "geography": "pflcc",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.281309,
-          27.832705
+          -81.2813,
+          27.8327
         ]
       }
     },
@@ -312,14 +335,14 @@
         "caption": "Atlanta Midtown Skyline, Piedmont Park",
         "credit": "Wikipedia, FlickrMmann 1988",
         "theme": "Smart Planning",
-        "geography": "Full Extent",
+        "geography": "salcc",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -84.388342,
-          33.768775
+          -84.3883,
+          33.7688
         ]
       }
     },
@@ -335,14 +358,14 @@
         "caption": "SALCC Longleaf pine prescribed burn",
         "credit": "USDA FS Southern Research Station Archive",
         "theme": "Saving Dollars & Improving Efficiencies",
-        "geography": "Full Extent",
+        "geography": "salcc",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.11393,
-          34.560278
+          -80.1139,
+          34.5603
         ]
       }
     },
@@ -358,14 +381,14 @@
         "caption": "SARP Devil's river state Natural Area, Texas",
         "credit": "Tim Birdsong",
         "theme": "Achieving Conservation",
-        "geography": "Full Extent",
+        "geography": "sarp",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.6766878,
-          33.6262072
+          -83.6767,
+          33.6262
         ]
       }
     },
@@ -381,14 +404,14 @@
         "caption": "SARP Mill Creek, Tennessee",
         "credit": "Lindsay Gardner",
         "theme": "Smart Planning",
-        "geography": "Full Extent",
+        "geography": "sarp",
         "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -78.680577,
-          35.774553
+          -78.6806,
+          35.7746
         ]
       }
     }
