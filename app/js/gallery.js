@@ -32,6 +32,7 @@
   function registerHandlers() {
     options.close.addEventListener('click', toggle);
     options.list.addEventListener('click', itemHandler);
+    emitter.on('gallery:close', hide);
   }
 
   function render() {

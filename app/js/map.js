@@ -70,6 +70,7 @@
     });
     geogLayer.addLayer(currentGeog);
     map.fitBounds(currentGeog.getBounds());
+    emitter.emit('gallery:close');
   }
 
   function flyToOffice(office) {
