@@ -23,7 +23,7 @@
   }
 
   function registerHandlers() {
-    emitter.on('project:click', handleProjectClick);
+    emitter.on('project:click', displayGeography);
     emitter.on('geographies:loaded', saveGeographies);
   }
 
@@ -49,7 +49,8 @@
       }
     }).addTo(map);
 
-    map.fitBounds(markers.getBounds());
+    map.flyToBounds(markers.getBounds());
+    console.log(markers.getBounds());
   }
 
   function saveGeographies(geog) {
@@ -60,20 +61,15 @@
     emitter.emit('project:click', e.target.feature);
   }
 
-  function handleProjectClick(office) {
-    displayGeography(office.properties.geography);
-    flyToOffice(office);
-  }
-
-  function displayGeography(geography) {
+  function displayGeography(office) {
     geogLayer.clearLayers();
     var currentGeog = L.geoJson(geographies, {
       filter: function (feature) {
-        console.log(feature.properties.name, geography);
-        return feature.properties.name === geography;
+        return feature.properties.name === office.properties.geography;
       }
     });
     geogLayer.addLayer(currentGeog);
+    map.fitBounds(currentGeog.getBounds());
   }
 
   function flyToOffice(office) {
