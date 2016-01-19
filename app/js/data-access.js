@@ -5,7 +5,7 @@
   var emitter = require('./mediator');
   var _ = require('./util')._;
 
-  var projects, lccs;
+  var projects, geographies;
 
   function init(path) {
     xhr.get(path, function (err, res) {
@@ -13,14 +13,14 @@
       emitter.emit('projects:loaded', projects);
     });
 
-    xhr.get('./data/lccs.js', function (err, res) {
-      lccs = JSON.parse(res.body);
-      emitter.emit('lccs:loaded', lccs);
+    xhr.get('./data/geographies.js', function (err, res) {
+      geographies = JSON.parse(res.body);
+      emitter.emit('geographies:loaded', geographies);
     });
   }
 
-  function getLccs() {
-    return lccs;
+  function getGeographies() {
+    return geographies;
   }
 
   function getProjects() {
@@ -35,7 +35,7 @@
 
   exports.getProjects = getProjects;
   exports.getProject = getProject;
-  exports.getLccs = getLccs;
+  exports.getGeographies = getGeographies;
   exports.init = init;
 
 })();

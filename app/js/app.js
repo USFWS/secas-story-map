@@ -25,8 +25,4 @@
 
   });
 
-  emitter.on('lccs:loaded', function (lccs) {
-    map.addLayer(lccs, 'area_names');
-  });
-
 })();
