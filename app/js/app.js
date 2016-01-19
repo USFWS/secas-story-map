@@ -2,6 +2,7 @@
   'use strict';
 
   var map = require('./map');
+  var infoWindow = require('./infowindow');
   var gallery = require('./gallery');
   var data = require('./data-access');
   var emitter = require('./mediator');
@@ -9,6 +10,8 @@
   var projects;
 
   data.init('./data/projects.js');
+
+  infoWindow.init();
 
   emitter.on('projects:loaded', function (projectData) {
     projects = projectData;
