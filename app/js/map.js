@@ -50,7 +50,6 @@
     }).addTo(map);
 
     map.flyToBounds(markers.getBounds());
-    console.log(markers.getBounds());
   }
 
   function saveGeographies(geog) {
