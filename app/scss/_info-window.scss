@@ -1,0 +1,26 @@
+.info-window-container {
+  background: white;
+  border-radius: 5px;
+  bottom: 10px;
+  position: fixed;
+  right: 10px;
+  top: 10px;
+  transform: translateX(98%);
+  transition: all .5s;
+  width: 500px;
+  z-index: 401;
+
+  &.active {
+    transform: translateX(0);
+  }
+}
+
+.info-window-toggle {
+  background: white;
+  border: 0;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  left: -10px;
+  position: absolute;
+  top: 5px;
+}
