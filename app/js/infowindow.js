@@ -18,7 +18,7 @@
     options.container = dom.create('aside', 'info-window-container', document.body);
     options.content = dom.create('section', 'info-window-content', options.container);
     options.toggle = dom.create('button', 'info-window-toggle', options.container);
-    options.toggle.innerHTML = '&#9668;';
+    options.toggle.setAttribute('aria-label', 'Close');
   }
 
   function registerHandlers() {
@@ -28,14 +28,12 @@
   }
 
   function show() {
-    options.toggle.innerHTML = '&#9658;';
     dom.addClass(options.container, 'active');
     visible = true;
     emitter.emit('gallery:close');
   }
 
   function hide() {
-    options.toggle.innerHTML = '&#9668;';
     dom.removeClass(options.container, 'active');
     visible = false;
   }
