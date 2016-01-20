@@ -31,13 +31,13 @@
     options.toggle.innerHTML = '&#9658;';
     dom.addClass(options.container, 'active');
     visible = true;
+    emitter.emit('gallery:close');
   }
 
   function hide() {
     options.toggle.innerHTML = '&#9668;';
     dom.removeClass(options.container, 'active');
     visible = false;
-    emitter.emit('infowindow:closed');
   }
 
   function toggle() {
