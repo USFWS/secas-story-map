@@ -45,6 +45,7 @@
     gallery = true;
     options.el.classList.remove('gallery-hidden');
     options.close.innerHTML = '&#9660;';
+    emitter.emit('infowindow:close');
   }
 
   function hide() {
