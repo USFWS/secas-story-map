@@ -3,6 +3,7 @@
 
   var dom = require('./util').dom;
   var template = require('../templates/about.jade');
+  var emitter = require('./mediator');
 
   var options = {},
       active = false;
@@ -35,6 +36,7 @@
   function show() {
     active = true;
     dom.addClass(options.modal, 'active');
+    emitter.emit('infowindow:close');
   }
 
   function hide() {
