@@ -68,7 +68,7 @@
       }
     });
     geogLayer.addLayer(currentGeog);
-    map.fitBounds(currentGeog.getBounds());
+    map.fitBounds(currentGeog.getBounds(), { paddingBottomRight: [200, 300]});
     emitter.emit('gallery:close');
   }
 
