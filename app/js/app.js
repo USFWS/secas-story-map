@@ -3,6 +3,7 @@
 
   var map = require('./map');
   var infoWindow = require('./infowindow');
+  var about = require('./about');
   var gallery = require('./gallery');
   var data = require('./data-access');
   var emitter = require('./mediator');
@@ -12,6 +13,8 @@
   data.init('./data/projects.js');
 
   infoWindow.init();
+
+  about.init();
 
   emitter.on('projects:loaded', function (projectData) {
     projects = projectData;
