@@ -33,6 +33,7 @@
     options.close.addEventListener('click', toggle);
     options.list.addEventListener('click', itemHandler);
     emitter.on('gallery:close', hide);
+    emitter.on('infowindow:closed', show);
   }
 
   function render() {

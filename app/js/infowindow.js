@@ -35,6 +35,7 @@
     options.toggle.innerHTML = '&#9668;';
     dom.removeClass(options.container, 'active');
     visible = false;
+    emitter.emit('infowindow:closed');
   }
 
   function toggle() {
