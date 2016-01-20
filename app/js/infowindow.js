@@ -22,6 +22,7 @@
   function registerHandlers() {
     options.toggle.addEventListener('click', toggle);
     emitter.on('project:click', render);
+    emitter.on('infowindow:close', hide);
   }
 
   function show() {
@@ -41,7 +42,7 @@
   }
 
   function render(project) {
-    options.content.innerHTML = template({ project: project });
+    options.content.innerHTML = template({ project: project.properties });
     show();
   }
 
