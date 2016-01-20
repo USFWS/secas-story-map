@@ -10,8 +10,7 @@
         "location": "Central Location of AppLCC (KY/WVA border)",
         "url": "http://applcc.org/assessing-future-energy-development",
         "photo": "app-lcc-energy-mapping.jpg",
-        "caption": "APPLCC Energy Mapping",
-        "credit": "",
+        "caption": "Energy Mapping",
         "theme": "Smart Planning",
         "geography": "applcc",
         "shapefiles": "Delivered"
@@ -33,8 +32,7 @@
         "location": "SW VA/NC Border",
         "url": "http://applcc.org/riparian-restoration",
         "photo": "app-lcc-lynn-camp-prong-smoky-national-park.jpg",
-        "caption": "APPLCC Lynn Camp Prong Smoky NP",
-        "credit": "",
+        "caption": "Lynn Camp Prong Smoky NP",
         "theme": "Smart Planning",
         "geography": "ebtjv",
         "shapefiles": "Delivered"
@@ -56,8 +54,7 @@
         "location": "Center of Tennessee River Basin",
         "url": "http://applcc.org/projects/trb",
         "photo": "app-lcc-trb-partnership.jpg",
-        "caption": "APPLCC TRB Partnership",
-        "credit": "",
+        "caption": "Tennessee River Basin Partnership",
         "theme": "Building on Existing Partnerships",
         "geography": "tennessee-river-basin",
         "shapefiles": "Delivered"
@@ -79,8 +76,7 @@
         "location": "In between Puerto Rico and the US Virgin Islands",
         "url": "http://caribbeanlcc.databasin.org/galleries/68445db9cda44b63947ebe29725429d5 ",
         "photo": "car-lcc-protected areas.jpg",
-        "caption": "CARLCC Protected Marine and Terrestrial Areas",
-        "credit": "CALCC",
+        "caption": "Protected Marine and Terrestrial Areas",
         "theme": "",
         "geography": "calcc",
         "shapefiles": "Delivered"
@@ -102,8 +98,7 @@
         "location": "Between the US and British Virgin Islands in the Atlantic Ocean or Caribbean Sea.",
         "url": "http://caribbeanlcc.databasin.org/groups/67a684972a3b461c872c9bc5a23790c4/profile ",
         "photo": "car-lcc-cay-systems.jpg",
-        "caption": "CARLCC Cay Systems",
-        "credit": "CALCC",
+        "caption": "Cay Systems",
         "theme": "",
         "geography": "calcc",
         "shapefiles": "Delivered"
@@ -125,8 +120,7 @@
         "location": "San Juan, Puerto Rico ",
         "url": "http://caribbeanlcc.org/explore-the-effects-of-climate-change-on-puerto-rico-and-other-caribbean-islands/ ",
         "photo": "car-lcc-climate-projections.png",
-        "caption": "CALCC Climate Projections",
-        "credit": "CALCC",
+        "caption": "Climate Projections",
         "theme": "",
         "geography": "Sub-geography",
         "shapefiles": ""
@@ -148,8 +142,7 @@
         "location": "North/central TX, anywhere in green space: http://www.opjv.org/#!ecoregions/c10d6",
         "url": "http://gulfcoastprairielcc.org/news-information/news-and-events-container/identifying-priority-grasslands-in-south-central-united-states/",
         "photo": "gcp-lcc-nobo.jpg",
-        "caption": "GCPLCC Nobo",
-        "credit": "Steve Maslowski, USFWS",
+        "caption": "Nobo. Photo: Steve Maslowski, USFWS",
         "theme": "Smart Planning",
         "geography": "gcplcc",
         "shapefiles": "Delivered"
@@ -171,8 +164,7 @@
         "location": "Center of the GCPO, very near or on the Mississippi River.",
         "url": "http://gcpolcc.org/profiles/blogs/innovative-new-data-product-allows-managers-and-planners-to-asses",
         "photo": "gcpo-lcc-atch-basin-flooded.jpg",
-        "caption": "Atchafalaya basin flooded",
-        "credit": "Y. Allen",
+        "caption": "Atchafalaya basin flooded. Photo: Y. Allen",
         "theme": "Smart Planning/Achieving Conservation",
         "geography": "gcpolcc",
         "shapefiles": "Delivered"
@@ -194,8 +186,7 @@
         "location": "On the Gulf Coast at the AL/FL border",
         "url": "http://gcpolcc.org/profiles/blogs/evaluating-tidal-saline-wetland-migration-along-the-u-s-gulf-of-m",
         "photo": "gcpo-lcc-grand-bay-marsh-edge.jpg",
-        "caption": "Grand Bay march edge",
-        "credit": "USFWS",
+        "caption": "Grand Bay marsh edge. Photo: USFWS",
         "theme": "Smart Planning",
         "geography": "wetland-migration",
         "shapefiles": "Delivered"
@@ -217,8 +208,7 @@
         "location": "Where the northern border of Arkansas meets Oklahoma",
         "url": "http://gcpolcc.org/profiles/blogs/landscape-scale-science-plays-a-critical-role-in-rangewide-monito",
         "photo": "gcpo-interior-least-tern.jpg",
-        "caption": "Interior least tern",
-        "credit": "USFWS",
+        "caption": "Interior least tern. Photo: USFWS",
         "theme": "Saving Dollars & Improving Efficiencies/ Buildling on Existing Partnerships",
         "geography": "least-tern",
         "shapefiles": "Delivered"
@@ -240,8 +230,7 @@
         "location": "",
         "url": "http://peninsularfloridalcc.org/profiles/blogs/the-lower-st-johns-river-a-special-integration-zone-between-two",
         "photo": "pf-lcc-st-johns-river-special-integration-zone-fl.jpg",
-        "caption": "PFLCC St. Johns River Special Integration Zone",
-        "credit": "",
+        "caption": "St. Johns River Special Integration Zone",
         "theme": "Smart Planning",
         "geography": "Sub-geography",
         "shapefiles": ""
@@ -263,8 +252,7 @@
         "location": "Center of PFLCC geography for now ",
         "url": "http://peninsularfloridalcc.org/page/floridas-cooperative",
         "photo": "pflcc-florida-critical-lands-and-water-identification-project-map.jpg",
-        "caption": "PFLCC FLorida Critical Lands and Water Identification Map",
-        "credit": "",
+        "caption": "FLorida Critical Lands and Water Identification Map",
         "theme": "Building on Existing Partnerships",
         "geography": "pflcc",
         "shapefiles": "Delivered"
@@ -286,8 +274,7 @@
         "location": "Pin the center",
         "url": "http://peninsularfloridalcc.org/page/pflcc-af-partnership",
         "photo": "pflcc-air-force.jpg",
-        "caption": "PFLCC U.S. Air Force",
-        "credit": "USAF",
+        "caption": "Graphic: USAF",
         "theme": "Building on Existing Partnerships",
         "geography": "Sub-geography",
         "shapefiles": ""
@@ -309,8 +296,7 @@
         "location": "Center of PFLCC geography ",
         "url": "http://peninsularfloridalcc.org/page/climate-change-scenarios ",
         "photo": "pflcc-great-egret-and-tower-big-bend-wma-fwc.jpg",
-        "caption": "PFLCC Great egret and tower at Big Bend WMA",
-        "credit": "FWC",
+        "caption": "Great egret and tower at Big Bend WMA. Photo: FWC",
         "theme": "Smart Planning",
         "geography": "pflcc",
         "shapefiles": "Delivered"
@@ -332,8 +318,7 @@
         "location": "Atlanta",
         "url": "http://www.southatlanticlcc.org/2015/09/04/south-atlantic-lcc-links-conservation-to-planning/",
         "photo": "salcc-atlanta-midtown-skyline-botanical-gardens-piedmont-park.jpg",
-        "caption": "Atlanta Midtown Skyline, Piedmont Park",
-        "credit": "Wikipedia, FlickrMmann 1988",
+        "caption": "Atlanta Midtown Skyline, Piedmont Park. Photo: Wikipedia, FlickrMmann 1988",
         "theme": "Smart Planning",
         "geography": "salcc",
         "shapefiles": "Delivered"
@@ -355,8 +340,7 @@
         "location": "Carolina Sandhills Refuge",
         "url": "http://www.southatlanticlcc.org/2015/07/09/blueprint-brings-new-longleaf-fire-funds/",
         "photo": "salcc-longleaf-pine-prescribed-burn-usda.jpg",
-        "caption": "SALCC Longleaf pine prescribed burn",
-        "credit": "USDA FS Southern Research Station Archive",
+        "caption": "Longleaf pine prescribed burn. Photo: USDA FS Southern Research Station Archive",
         "theme": "Saving Dollars & Improving Efficiencies",
         "geography": "salcc",
         "shapefiles": "Delivered"
@@ -378,8 +362,7 @@
         "location": "2123 Hwy 278 SE, Social Circle GA",
         "url": "http://salcc.databasin.org/",
         "photo": "sarp-devils-river-state-natural-area-tx.jpg",
-        "caption": "SARP Devil's river state Natural Area, Texas",
-        "credit": "Tim Birdsong",
+        "caption": "Devil's river state Natural Area, Texas. Photo: Tim Birdsong",
         "theme": "Achieving Conservation",
         "geography": "sarp",
         "shapefiles": "Delivered"
@@ -401,8 +384,7 @@
         "location": "1751 Varsity Drive, Raleigh, NC 27606-2576",
         "url": "http://www.southeastaquatics.net/sarps-programs/southeast-aquatic-connectivity-assessment-program-seacap",
         "photo": "sarp-mill-creek-tn.jpg",
-        "caption": "SARP Mill Creek, Tennessee",
-        "credit": "Lindsay Gardner",
+        "caption": "Mill Creek, Tennessee. Photo: Lindsay Gardner",
         "theme": "Smart Planning",
         "geography": "sarp",
         "shapefiles": "Delivered"
