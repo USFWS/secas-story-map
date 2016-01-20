@@ -1,18 +1,42 @@
 .info-window-container {
   background: white;
   border-radius: 5px;
-  bottom: 10px;
   position: fixed;
   right: 10px;
   top: 10px;
   transform: translateX(98%);
   transition: all .5s;
-  width: 500px;
   z-index: 401;
 
   &.active {
     transform: translateX(0);
   }
+
+  img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+}
+
+.info-window-content {
+  display: table;
+}
+
+.info-window-photo {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.info-window-caption {
+  position: absolute;
+  right: 5px;
+  bottom: -35px;
+}
+
+.project-description {
+  caption-side: bottom;
+  display: table-caption;
+  padding: 0 1em;
 }
 
 .info-window-toggle {
@@ -20,7 +44,8 @@
   border: 0;
   border-bottom-left-radius: 5px;
   border-top-left-radius: 5px;
-  left: -10px;
+  left: -23px;
   position: absolute;
   top: 5px;
+  z-index: -1;
 }
