@@ -1,5 +1,7 @@
 (function () {
   'use strict';
+  var imagesLoaded = require('imagesloaded');
+
   var dom = require('./util').dom;
   var emitter = require('./mediator');
   var template  = require('../templates/detail.jade');
@@ -43,8 +45,8 @@
   }
 
   function render(project) {
+    imagesLoaded(options.content, show);
     options.content.innerHTML = template({ project: project.properties });
-    show();
   }
 
   module.exports.init = init;
