@@ -28,7 +28,7 @@
       transform: translateX(0);
 
       .info-window-toggle::after {
-        content: '\25C0';
+        content: '\25B6';
       }
     }
   }
@@ -92,7 +92,7 @@
     z-index: -1;
 
     &::after {
-      content: '\25B6';
+      content: '\25C0';
     }
   }
 }
