@@ -276,8 +276,8 @@
         "photo": "pflcc-air-force.jpg",
         "caption": "Graphic: USAF",
         "theme": "Building on Existing Partnerships",
-        "geography": "Sub-geography",
-        "shapefiles": ""
+        "geography": "pflcc",
+        "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
@@ -340,7 +340,7 @@
         "location": "Carolina Sandhills Refuge",
         "url": "http://www.southatlanticlcc.org/2015/07/09/blueprint-brings-new-longleaf-fire-funds/",
         "photo": "salcc-longleaf-pine-prescribed-burn-usda.jpg",
-        "caption": "Longleaf pine prescribed burn. Photo: USDA FS Southern Research Station Archive",
+        "caption": "Longleaf pine prescribed burn. Photo: USDA FS Southern Research Station",
         "theme": "Saving Dollars & Improving Efficiencies",
         "geography": "salcc",
         "shapefiles": "Delivered"
