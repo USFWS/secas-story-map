@@ -2,7 +2,8 @@ div.info-window-photo
   img(src="./images/photos/" + project.photo, alt="")
   p.info-window-caption= project.caption
 div.project-description
-  h2= project.title
+  h2
+    a(href=project.url)= project.title
   p= project.description
   p
     a(href=project.url, target="_blank") Read more...
