@@ -2,6 +2,7 @@
   background: white;
   bottom: 0;
   opacity: 0;
+  overflow-y: scroll;
   position: fixed;
   right: 0;
   top: 0;
@@ -17,6 +18,7 @@
   @media (min-width: 1000px) {
     border-radius: 5px;
     bottom: 20px;
+    max-height: 95vh;
     opacity: 1;
     right: 10px;
     top: auto;
