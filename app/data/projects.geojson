@@ -232,14 +232,14 @@
         "photo": "pf-lcc-st-johns-river-special-integration-zone-fl.jpg",
         "caption": "St. Johns River Special Integration Zone",
         "theme": "Smart Planning",
-        "geography": "Sub-geography",
+        "geography": "st-johns",
         "shapefiles": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -80.884,
-          28.3413
+          -81.7027,
+          30.2012
         ]
       }
     },
