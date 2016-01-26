@@ -142,7 +142,7 @@
         "location": "North/central TX, anywhere in green space: http://www.opjv.org/#!ecoregions/c10d6",
         "url": "http://gulfcoastprairielcc.org/news-information/news-and-events-container/identifying-priority-grasslands-in-south-central-united-states/",
         "photo": "gcp-lcc-nobo.jpg",
-        "caption": "Nobo. Photo: Steve Maslowski, USFWS",
+        "caption": "Northern Bobwhite. Photo: Steve Maslowski, USFWS",
         "theme": "Smart Planning",
         "geography": "gcplcc",
         "shapefiles": "Delivered"
@@ -226,14 +226,14 @@
       "properties": {
         "lcc": "PFLCC",
         "title": "The Lower St. Johns River – A Special Integration Zone Between Two Bordering LCCs",
-        "description": "This Special Integration Zone between the Peninsular Florida LCC and the South Atlantic LCC provides additional opportunity for the neighboring LCCs to work together across the landscape, in a region that has been identified as a priority in both LCCs through their respective blueprint processes.",
+        "description": "This Special Integration Zone between the Peninsular Florida LCC and the South Atlantic LCC allows these LCCs to work together across the landscape in a priority region.",
         "location": "",
         "url": "http://peninsularfloridalcc.org/profiles/blogs/the-lower-st-johns-river-a-special-integration-zone-between-two",
         "photo": "pf-lcc-st-johns-river-special-integration-zone-fl.jpg",
         "caption": "St. Johns River Special Integration Zone",
         "theme": "Smart Planning",
         "geography": "st-johns",
-        "shapefiles": ""
+        "shapefiles": "Delivered"
       },
       "geometry": {
         "type": "Point",
@@ -247,12 +247,12 @@
       "type": "Feature",
       "properties": {
         "lcc": "PFLCC",
-        "title": "Building on Existing Resources to Create a Statewide Common Vision and Coordinated Conservation Efforts.",
-        "description": "The Peninsular Florida LCC aims to build upon Florida’s State Wildlife Action Plan, Florida’s Cooperative Conservation Blueprint (CCB), the Critical Lands and Water Identification Project (CLIP) and other resources already in existence to create a comprehensive vision to coordinate efforts across peninsular Florida.",
+        "title": "Building on Existing Partnerships for Statewide Coordinated Conservation",
+        "description": "The Peninsular Florida LCC is building upon resources already in existence to create a comprehensive vision to coordinate efforts across peninsular Florida.",
         "location": "Center of PFLCC geography for now ",
         "url": "http://peninsularfloridalcc.org/page/floridas-cooperative",
         "photo": "pflcc-florida-critical-lands-and-water-identification-project-map.jpg",
-        "caption": "FLorida Critical Lands and Water Identification Map",
+        "caption": "Florida Critical Lands and Water Identification Map",
         "theme": "Building on Existing Partnerships",
         "geography": "pflcc",
         "shapefiles": "Delivered"
@@ -269,8 +269,8 @@
       "type": "Feature",
       "properties": {
         "lcc": "PFLCC",
-        "title": "New initiative: the Florida Strategic Plan for Sustaining Military Readiness through Conservation Partnerships",
-        "description": "The Peninsular Florida LCC is partnering with the U.S. Air Force, U.S. Fish and Wildlife Service, University of Florida, Florida Natural Areas Inventory, The Nature Conservancy, and the National Wildlife Refuge Association on this new initiative that will result in the development of landscape-level planning for Air Force installations in Florida that are in line with strategic conservation plans recommended by the Peninsular Florida LCC and other partners. ",
+        "title": "Florida Strategic Plan for Sustaining Military Readiness through Conservation Partnerships",
+        "description": "This initiative uses Peninsula Florida LCC conservation planning tools to facilitate military readiness. ",
         "location": "Pin the center",
         "url": "http://peninsularfloridalcc.org/page/pflcc-af-partnership",
         "photo": "pflcc-air-force.jpg",
@@ -291,8 +291,8 @@
       "type": "Feature",
       "properties": {
         "lcc": "PFLCC",
-        "title": "Landscape Conservation and Climate Change Scenarios for the State of Florida",
-        "description": "The science focus of the Peninsular Florida LCC is to enhance conservation planning in Florida by investigating a number of possible trajectories of future landscape transformation; consequently, a decision support system for strategic conservation has been developed, with a tool to generate visualizations of land cover condition of three alternative futures for Florida in 2020, 2040 and 2060",
+        "title": "Landscape Conservation and Climate Change Scenarios for Florida",
+        "description": "The Peninsular Florida LCC's science focus is to enhance conservation planning by investigating possible future landscape transorfamation, including this decision support system for strategic conservation.",
         "location": "Center of PFLCC geography ",
         "url": "http://peninsularfloridalcc.org/page/climate-change-scenarios ",
         "photo": "pflcc-great-egret-and-tower-big-bend-wma-fwc.jpg",
