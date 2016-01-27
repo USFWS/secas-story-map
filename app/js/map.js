@@ -47,7 +47,7 @@
       }
     }).addTo(map);
 
-    map.flyToBounds(markers.getBounds());
+    map.fitBounds(markers.getBounds());
   }
 
   function saveGeographies(geog) {
@@ -68,12 +68,6 @@
     geogLayer.addLayer(currentGeog);
     map.fitBounds(currentGeog.getBounds(), { paddingBottomRight: [200, 300]});
     emitter.emit('gallery:close');
-  }
-
-  function flyToOffice(office) {
-    // Clone array, reverse order for Leaflet
-    var coords = office.geometry.coordinates.slice(0).reverse();
-    map.flyTo(coords);
   }
 
   module.exports.init = init;
