@@ -208,7 +208,7 @@
         "location": "Center of PFLCC geography for now ",
         "url": "http://peninsularfloridalcc.org/page/floridas-cooperative",
         "photo": "pflcc-florida-critical-lands-and-water-identification-project-map.jpg",
-        "caption": "Florida Critical Lands and Water Identification Map",
+        "caption": "Florida Critical Lands and Waters Identification Project Map",
         "theme": "Building on Existing Partnerships",
         "geography": "pflcc",
         "shapefiles": "Delivered"
@@ -216,8 +216,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -81.2813,
-          27.8327
+          -81.9456,
+          28.7976
         ]
       }
     },
@@ -384,7 +384,7 @@
         "location": "Center of PFLCC geography ",
         "url": "http://peninsularfloridalcc.org/page/climate-change-scenarios ",
         "photo": "pflcc-great-egret-and-tower-big-bend-wma-fwc.jpg",
-        "caption": "Great egret and tower at Big Bend WMA. Photo: FWC",
+        "caption": "Big Bend Wildlife Management Area Photo: Florida Fish and Wildlife Conservation Commission",
         "theme": "Smart Planning",
         "geography": "pflcc",
         "shapefiles": "Delivered"
@@ -392,8 +392,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -83.7968,
-          30.1963
+          -81.4513,
+          27.6262
         ]
       }
     }
