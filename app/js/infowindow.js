@@ -30,7 +30,7 @@
   function show() {
     dom.addClass(options.container, 'active');
     visible = true;
-    emitter.emit('gallery:close');
+    emitter.emit('gallery:close', false);
   }
 
   function hide() {

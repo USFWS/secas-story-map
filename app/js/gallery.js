@@ -44,6 +44,7 @@
   function show() {
     gallery = true;
     options.el.classList.remove('gallery-hidden');
+    emitter.emit('infowindow:close', false);
   }
 
   function hide() {
