@@ -52,12 +52,15 @@
 }
 
 .info-window-photo {
+  display: table;
   position: relative;
 }
 
 .info-window-caption {
+  caption-side: bottom;
+  display: table-caption;
+  padding: .5em;
   margin: 0 .25em;
-  text-align: right;
 }
 
 .project-description {
