@@ -9,6 +9,8 @@
     ]
   },
   "scripts": {
+    "update:projects": "curl 'https://docs.google.com/spreadsheets/d/13FIjoE0x6VGYkxhp7YQpuzbTIEuFTn1AdoGeVlzDGeY/pub?gid=451142798&single=true&output=csv' | csv2geojson > app/data/projects.geojson",
+    "postupdate:projects": "npm run shrink-projects",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-js": "browserify app/js/app.js | uglifyjs -mc > dist/js/bundle.js",
     "watch-js": "watchify app/js/app.js -o dist/js/bundle.js -dv",
@@ -18,12 +20,13 @@
     "shrink-projects": "json-minify app/data/projects.geojson > dist/data/projects.js",
     "shrink-json": "npm run shrink-geog & npm run shrink-projects",
     "preshrink-img": "rimraf dist/images/*",
-    "shrink-img": "imagemin app/images/*.png dist/images/ -p && node app/js/resize-images",
+    "shrink-img": "imagemin app/images/*.png dist/images/ -p && node build/resize-images",
     "shrink-html": "htmlmin -o dist/index.html app/index.html",
     "watch-img": "watch 'npm run shrink-img' app/images",
     "serve": "browser-sync start --server dist --files 'dist/**/*'",
-    "build": "npm run shrink-html & npm run shrink-json & npm run shrink-img & npm run build-sass & npm run build-js",
-    "start": "npm run shrink-html & npm run shrink-json & npm run shrink-img & npm run watch-sass & npm run watch-js & npm run serve",
+    "optimize": "npm run shrink-html & npm run shrink-json & npm run shrink-img",
+    "build": "npm run optimize & npm run build-sass & npm run build-js",
+    "start": "npm run optimize & npm run watch-sass & npm run watch-js & npm run serve",
     "inspect:bundle": "browserify --full-paths app/js/app.js | uglifyjs -mc | Discify --open",
     "publish:demo": "npm run build && gh-pages -d dist"
   },
@@ -40,6 +43,7 @@
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "browserify": "^13.0.0",
+    "csv2geojson": "^4.0.0",
     "disc": "^1.3.2",
     "gh-pages": "^0.8.0",
     "html-minifier-cli": "^0.1.0",
