@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "lcc": "GCP LCC",
-        "title": "Prioritizing grasslands in south-central U.S.",
+        "title": "Prioritizing Grasslands in South-Central U.S.",
         "description": "New Grassland Decision Support Tool helps partners find the best places to invest for conservation.",
         "location": "North/central TX, anywhere in green space: http://www.opjv.org/#!ecoregions/c10d6",
         "url": "http://gulfcoastprairielcc.org/news-information/news-and-events-container/identifying-priority-grasslands-in-south-central-united-states/",
@@ -27,12 +27,12 @@
       "type": "Feature",
       "properties": {
         "lcc": "Multi-LCC",
-        "title": "Project assists delisting of Interior Least Tern",
+        "title": "Project Assists Delisting of Interior Least Tern",
         "description": "An 18-state rangewide monitoring plan aims to meet delisting criteria while also saving federal dollars.",
         "location": "Where the northern border of Arkansas meets Oklahoma",
         "url": "http://gcpolcc.org/profiles/blogs/landscape-scale-science-plays-a-critical-role-in-rangewide-monito",
         "photo": "gcpo-interior-least-tern.jpg",
-        "caption": "Interior least tern. Photo: USFWS",
+        "caption": "Interior Least Tern. Photo: USFWS",
         "theme": "Saving Dollars & Improving Efficiencies/ Buildling on Existing Partnerships",
         "geography": "least-tern",
         "shapefiles": "Delivered"
@@ -49,7 +49,7 @@
       "type": "Feature",
       "properties": {
         "lcc": "GCPO LCC",
-        "title": "Inundation Frequency data for 180 million acres",
+        "title": "Inundation Frequency Data for 180 Million Acres",
         "description": "Innovative dataset provides fisheries/land managers with “desktop” assessment of floodplain habitat over time.",
         "location": "Center of the GCPO, very near or on the Mississippi River.",
         "url": "http://gcpolcc.org/profiles/blogs/innovative-new-data-product-allows-managers-and-planners-to-asses",
@@ -71,7 +71,7 @@
       "type": "Feature",
       "properties": {
         "lcc": "GCPO LCC",
-        "title": "Putting future change into conservation planning",
+        "title": "Putting Future Change into Conservation Planning",
         "description": "New tool predicts “pinch points” where sea level rise/urbanization could eliminate saltmarsh or mangrove systems.",
         "location": "On the Gulf Coast at the AL/FL border",
         "url": "http://gcpolcc.org/profiles/blogs/evaluating-tidal-saline-wetland-migration-along-the-u-s-gulf-of-m",
@@ -98,7 +98,7 @@
         "location": "Center of Tennessee River Basin",
         "url": "http://applcc.org/projects/trb",
         "photo": "app-lcc-trb-partnership.jpg",
-        "caption": "Tennessee River Basin Partnership",
+        "caption": "Searching for mussels in the South Toe River. Photo: Gary Peeples/USFWS",
         "theme": "Building on Existing Partnerships",
         "geography": "tennessee-river-basin",
         "shapefiles": "Delivered"
@@ -115,12 +115,12 @@
       "type": "Feature",
       "properties": {
         "lcc": "SALCC",
-        "title": "South Atlantic LCC links conservation to planning",
+        "title": "South Atlantic LCC Links Conservation to Planning",
         "description": "A new project will refine urban conservation priorities and strengthen relationships with Southeast planners.",
         "location": "Atlanta",
         "url": "http://www.southatlanticlcc.org/2015/09/04/south-atlantic-lcc-links-conservation-to-planning/",
         "photo": "salcc-atlanta-midtown-skyline-botanical-gardens-piedmont-park.jpg",
-        "caption": "Atlanta Midtown Skyline, Piedmont Park. Photo: Wikipedia, FlickrMmann 1988",
+        "caption": "Atlanta midtown skyline, Piedmont Park. Photo: Wikipedia, FlickrMmann 1988",
         "theme": "Smart Planning",
         "geography": "salcc",
         "shapefiles": "Delivered"
@@ -164,7 +164,7 @@
         "location": "",
         "url": "http://peninsularfloridalcc.org/profiles/blogs/the-lower-st-johns-river-a-special-integration-zone-between-two",
         "photo": "pf-lcc-st-johns-river-special-integration-zone-fl.jpg",
-        "caption": "St. Johns River Special Integration Zone",
+        "caption": "St. Johns River special integration zone. Graphic: Peninsular Florida LCC",
         "theme": "Smart Planning",
         "geography": "st-johns",
         "shapefiles": "Delivered"
@@ -186,7 +186,7 @@
         "location": "Between the US and British Virgin Islands in the Atlantic Ocean or Caribbean Sea.",
         "url": "http://caribbeanlcc.databasin.org/groups/67a684972a3b461c872c9bc5a23790c4/profile ",
         "photo": "car-lcc-cay-systems.jpg",
-        "caption": "Cay Systems",
+        "caption": "Cay systems",
         "theme": "",
         "geography": "calcc",
         "shapefiles": "Delivered"
@@ -208,7 +208,7 @@
         "location": "Center of PFLCC geography for now ",
         "url": "http://peninsularfloridalcc.org/page/floridas-cooperative",
         "photo": "pflcc-florida-critical-lands-and-water-identification-project-map.jpg",
-        "caption": "Florida Critical Lands and Waters Identification Project Map",
+        "caption": "Florida Critical Lands and Waters Identification Project Map. ",
         "theme": "Building on Existing Partnerships",
         "geography": "pflcc",
         "shapefiles": "Delivered"
@@ -252,7 +252,7 @@
         "location": "SW VA/NC Border",
         "url": "http://applcc.org/riparian-restoration",
         "photo": "app-lcc-lynn-camp-prong-smoky-national-park.jpg",
-        "caption": "Lynn Camp Prong Smoky NP",
+        "caption": "Lynn Camp Prong at Great Smokies National Park. Photo: National Park Service",
         "theme": "Smart Planning",
         "geography": "ebtjv",
         "shapefiles": "Delivered"
@@ -269,7 +269,7 @@
       "type": "Feature",
       "properties": {
         "lcc": "SALCC",
-        "title": "South Atlantic Conservation Blueprint brings new longleaf fire funds",
+        "title": "South Atlantic Conservation Blueprint Brings New Longleaf Fire Funds",
         "description": "The South Atlantic LCC helps secure $800,000 supporting prescribed fire in longleaf pine focus areas.",
         "location": "Carolina Sandhills Refuge",
         "url": "http://www.southatlanticlcc.org/2015/07/09/blueprint-brings-new-longleaf-fire-funds/",
@@ -318,7 +318,7 @@
         "location": "Central Location of AppLCC (KY/WVA border)",
         "url": "http://applcc.org/assessing-future-energy-development",
         "photo": "app-lcc-energy-mapping.jpg",
-        "caption": "Energy Mapping",
+        "caption": "Appalachians are rich in biological diversity and energy resources. Graphic: Appalachian LCC",
         "theme": "Smart Planning",
         "geography": "applcc",
         "shapefiles": "Delivered"
@@ -340,7 +340,7 @@
         "location": "In between Puerto Rico and the US Virgin Islands",
         "url": "http://caribbeanlcc.databasin.org/galleries/68445db9cda44b63947ebe29725429d5 ",
         "photo": "car-lcc-protected areas.jpg",
-        "caption": "Protected Marine and Terrestrial Areas",
+        "caption": "Protected marine and terrestrial areas.",
         "theme": "",
         "geography": "calcc",
         "shapefiles": "Delivered"
@@ -362,7 +362,7 @@
         "location": "San Juan, Puerto Rico ",
         "url": "http://caribbeanlcc.org/explore-the-effects-of-climate-change-on-puerto-rico-and-other-caribbean-islands/ ",
         "photo": "car-lcc-climate-projections.png",
-        "caption": "Climate Projections",
+        "caption": "Climate projections.",
         "theme": "",
         "geography": "Sub-geography",
         "shapefiles": ""
@@ -383,7 +383,7 @@
         "description": "The Peninsular Florida LCC's science focus is to enhance conservation planning by investigating possible future landscape transorfamation, including this decision support system for strategic conservation.",
         "location": "Center of PFLCC geography ",
         "url": "http://peninsularfloridalcc.org/page/climate-change-scenarios ",
-        "photo": "pflcc-great-egret-and-tower-big-bend-wma-fwc.jpg",
+        "photo": "pflcc-big-bend-wildlife-management-area-florida-fish-and-wildlife-conservation-commission.jpg",
         "caption": "Big Bend Wildlife Management Area Photo: Florida Fish and Wildlife Conservation Commission",
         "theme": "Smart Planning",
         "geography": "pflcc",
