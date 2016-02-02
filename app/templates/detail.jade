@@ -4,6 +4,4 @@ div.info-window-photo
 div.project-description
   h2
     a(href=project.url)= project.title
-  p= project.description
-  p
-    a(href=project.url, target="_blank") Read more...
+  p #{project.description} #[a(href=project.url, target="_blank") Read the full story...]
