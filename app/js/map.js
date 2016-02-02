@@ -66,7 +66,10 @@
       }
     });
     geogLayer.addLayer(currentGeog);
-    map.fitBounds(currentGeog.getBounds(), { paddingBottomRight: [200, 300]});
+    if (window.screen.width > 1000)
+      map.fitBounds(currentGeog.getBounds(), { paddingBottomRight: [500, 0]});
+    else
+      map.fitBounds(currentGeog.getBounds());
     emitter.emit('gallery:close');
   }
 
