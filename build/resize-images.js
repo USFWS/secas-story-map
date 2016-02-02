@@ -21,7 +21,7 @@
         .resize(175,125)
         .toFile(output + 'thumbnail/' + name);
       img
-        .resize(600, null)
+        .resize(500, null)
         .toFile(output + name);
     });
   });
