@@ -18,7 +18,7 @@
     images.forEach(function (name) {
       var img = sharp(input + name);
       img
-        .resize(150,150)
+        .resize(175,125)
         .toFile(output + 'thumbnail/' + name);
       img
         .resize(600, null)
