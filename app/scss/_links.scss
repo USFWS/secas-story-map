@@ -1,0 +1,24 @@
+$link-color: #23427a;
+
+a {
+  color: $link-color;
+
+  &:active,
+  &:visited {
+    color: lighten($link-color, 20);
+  }
+
+  &:hover {
+    color: darken($link-color, 10);
+  }
+}
+
+h1, h2, h3 {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
