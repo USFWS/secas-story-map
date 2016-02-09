@@ -5,6 +5,7 @@
   var randomColor = require('randomcolor');
   var _ = require('./util')._;
   var emitter = require('./mediator');
+  var icons = require('./icons');
 
   L.Icon.Default.imagePath = './images';
 
@@ -44,6 +45,19 @@
     var markers = L.geoJson(options.data, {
       onEachFeature: function(feature, layer) {
         layer.on({ click: onMarkerClick });
+      },
+      pointToLayer: function (feature, latlng) {
+        var props = feature.properties;
+        switch(props.theme) {
+          case 'Smart Planning':
+            return L.marker(latlng, { icon: icons.red });
+          case 'Building on Existing Partnerships':
+            return L.marker(latlng, { icon: icons.blue });
+          case 'Saving Dollars and Improving Efficiencies':
+            return L.marker(latlng, { icon: icons.green });
+          case 'Achieving Conservation':
+            return L.marker(latlng, { icon: icons.black });
+        }
       }
     }).addTo(map);
 
@@ -59,6 +73,7 @@
   }
 
   function displayGeography(office) {
+    var clientWidth = document.documentElement.clientWidth;
     geogLayer.clearLayers();
     var currentGeog = L.geoJson(geographies, {
       filter: function (feature) {
@@ -66,7 +81,9 @@
       }
     });
     geogLayer.addLayer(currentGeog);
-    if (window.screen.width > 1000)
+
+    // Decide if we should make room on the map for the infowindow
+    if (clientWidth > 1000)
       map.fitBounds(currentGeog.getBounds(), { paddingBottomRight: [500, 0]});
     else
       map.fitBounds(currentGeog.getBounds());
