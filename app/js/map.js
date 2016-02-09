@@ -50,13 +50,13 @@
         var props = feature.properties;
         switch(props.theme) {
           case 'Smart Planning':
-            return L.marker(latlng, { icon: icons.red });
+            return L.marker(latlng, { icon: icons.orange });
           case 'Building on Existing Partnerships':
             return L.marker(latlng, { icon: icons.blue });
           case 'Saving Dollars and Improving Efficiencies':
             return L.marker(latlng, { icon: icons.green });
           case 'Achieving Conservation':
-            return L.marker(latlng, { icon: icons.black });
+            return L.marker(latlng, { icon: icons.purple });
         }
       }
     }).addTo(map);

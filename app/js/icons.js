@@ -3,8 +3,8 @@
 
   var L = require('leaflet');
 
-  var red = L.icon({
-    iconUrl: './images/red.svg',
+  var orange = L.icon({
+    iconUrl: './images/orange.svg',
     iconSize: [30, 30]
   });
 
@@ -18,15 +18,15 @@
     iconSize: [30, 30]
   });
 
-  var black = L.icon({
-    iconUrl: './images/black.svg',
+  var purple = L.icon({
+    iconUrl: './images/purple.svg',
     iconSize: [30, 30]
   });
 
   module.exports = {
-    red: red,
     blue: blue,
     green: green,
-    black: black
+    orange: orange,
+    purple: purple
   };
 })();
