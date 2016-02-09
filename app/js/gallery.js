@@ -53,7 +53,7 @@
   }
 
   function toggle() {
-    (gallery) ? hide() : show();
+    gallery ? hide() : show(); // jshint ignore:line
   }
 
   function itemHandler(e) {
