@@ -33,7 +33,7 @@
         "url": "http://gcpolcc.org/profiles/blogs/landscape-scale-science-plays-a-critical-role-in-rangewide-monito",
         "photo": "gcpo-interior-least-tern.jpg",
         "caption": "Interior Least Tern. Photo: USFWS",
-        "theme": "Saving Dollars & Improving Efficiencies/ Buildling on Existing Partnerships",
+        "theme": "Saving Dollars and Improving Efficiencies",
         "geography": "least-tern",
         "shapefiles": "Delivered"
       },
@@ -55,7 +55,7 @@
         "url": "http://gcpolcc.org/profiles/blogs/innovative-new-data-product-allows-managers-and-planners-to-asses",
         "photo": "gcpo-lcc-atch-basin-flooded.jpg",
         "caption": "Atchafalaya basin flooded. Photo: Y. Allen",
-        "theme": "Smart Planning/Achieving Conservation",
+        "theme": "Smart Planning",
         "geography": "gcpolcc",
         "shapefiles": "Delivered"
       },
@@ -115,8 +115,8 @@
       "type": "Feature",
       "properties": {
         "cons": "SALCC",
-        "title": "South Atlantic LCC Links Conservation to Planning",
-        "description": "A new project will refine urban conservation priorities and strengthen relationships with Southeast planners.",
+        "title": "South Atlantic LCC Links Conservation to Urban Planning",
+        "description": "A new project will refine urban conservation priorities and strengthen relationships with Southeast urban and local planners.",
         "location": "Atlanta",
         "url": "http://www.southatlanticlcc.org/2015/09/04/south-atlantic-lcc-links-conservation-to-planning/",
         "photo": "salcc-atlanta-midtown-skyline-botanical-gardens-piedmont-park.jpg",
@@ -182,12 +182,12 @@
       "properties": {
         "cons": "Caribbean",
         "title": "Landscape Conservation Design for Caribbean Cay Systems",
-        "description": "International partnership works to develop a landscape conservation design for the network of offshore cay systems in the U.S. and British Caribbean  ",
+        "description": "International partnership works to develop a landscape conservation design for the network of offshore cay systems in the U.S. and British Caribbean",
         "location": "Between the US and British Virgin Islands in the Atlantic Ocean or Caribbean Sea.",
         "url": "http://caribbeanlcc.databasin.org/groups/67a684972a3b461c872c9bc5a23790c4/profile ",
         "photo": "car-lcc-cay-systems.jpg",
         "caption": "Cay systems",
-        "theme": "",
+        "theme": "Smart Planning",
         "geography": "calcc",
         "shapefiles": "Delivered"
       },
@@ -275,7 +275,7 @@
         "url": "http://www.southatlanticlcc.org/2015/07/09/blueprint-brings-new-longleaf-fire-funds/",
         "photo": "salcc-longleaf-pine-prescribed-burn-usda.jpg",
         "caption": "Longleaf pine prescribed burn. Photo: USDA FS Southern Research Station",
-        "theme": "Saving Dollars & Improving Efficiencies",
+        "theme": "Saving Dollars and Improving Efficiencies",
         "geography": "salcc",
         "shapefiles": "Delivered"
       },
@@ -341,7 +341,7 @@
         "url": "http://caribbeanlcc.databasin.org/galleries/68445db9cda44b63947ebe29725429d5 ",
         "photo": "car-lcc-protected areas.jpg",
         "caption": "Protected marine and terrestrial areas.",
-        "theme": "",
+        "theme": "Smart Planning",
         "geography": "calcc",
         "shapefiles": "Delivered"
       },
@@ -363,7 +363,7 @@
         "url": "http://caribbeanlcc.org/explore-the-effects-of-climate-change-on-puerto-rico-and-other-caribbean-islands/ ",
         "photo": "car-lcc-climate-projections.png",
         "caption": "Climate projections.",
-        "theme": "",
+        "theme": "Smart Planning",
         "geography": "Sub-geography",
         "shapefiles": ""
       },
