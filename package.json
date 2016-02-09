@@ -71,6 +71,7 @@
     "lodash.defaults": "^4.0.0",
     "lodash.find": "^4.0.1",
     "randomcolor": "^0.4.3",
+    "underscore.string": "^3.2.3",
     "xhr": "^2.2.0"
   }
 }

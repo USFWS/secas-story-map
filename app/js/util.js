@@ -5,7 +5,8 @@
 
   var _ = {
     defaults: require('lodash.defaults'),
-    find: require('lodash.find')
+    find: require('lodash.find'),
+    slugify: require('underscore.string/slugify')
   };
 
   var dom = {
