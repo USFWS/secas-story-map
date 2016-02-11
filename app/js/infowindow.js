@@ -39,7 +39,7 @@
   }
 
   function toggle() {
-    visible ? hide() : show();
+    visible ? hide() : show(); //jshint ignore:line
   }
 
   function render(project) {

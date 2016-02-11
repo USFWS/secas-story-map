@@ -20,7 +20,7 @@
     options.modalContent = dom.create('section', 'about-content', options.modal);
     options.close = dom.create('button', 'about-close', options.modal);
 
-    options.button.innerHTML = '?';
+    options.button.innerHTML = 'About';
     options.close.innerHTML = 'Close';
   }
 
