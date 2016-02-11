@@ -5,7 +5,7 @@ div.info-window-photo
   p.info-window-caption= project.caption
 div.project-description
   h2
-    a(href=project.url)= project.title
+    a(href=project.url target="_blank")= project.title
   p
     span.detail-theme(class=slug) Theme: #{project.theme}
   p #{project.description} #[a(href=project.url, target="_blank") Read the full story...]
