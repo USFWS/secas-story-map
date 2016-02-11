@@ -45,8 +45,7 @@
   }
 
   function toggle() {
-    console.log(active);
-    active ? hide() : show();
+    active ? hide() : show(); //jshint ignore:line
   }
 
   module.exports.init = init;
