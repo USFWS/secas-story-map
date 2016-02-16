@@ -27,6 +27,11 @@
   function registerHandlers() {
     options.button.addEventListener('click', toggle);
     options.close.addEventListener('click', toggle);
+    document.body.addEventListener('keyup', aboutKeyup);
+  }
+
+  function aboutKeyup(e) {
+    if (e.keyCode === 27 && active) hide();
   }
 
   function render() {
