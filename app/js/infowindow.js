@@ -22,9 +22,15 @@
   }
 
   function registerHandlers() {
+    document.body.addEventListener('keydown', keydownHandler);
     options.toggle.addEventListener('click', toggle);
     emitter.on('project:click', render);
     emitter.on('infowindow:close', hide);
+  }
+
+  function keydownHandler(e) {
+    // Close the infowindow if the user hits escape
+    if (visible && e.keyCode === 27) hide();
   }
 
   function show() {
