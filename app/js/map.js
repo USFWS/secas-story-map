@@ -61,7 +61,7 @@
       }
     }).addTo(map);
 
-    map.fitBounds(markers.getBounds());
+    map.fitBounds(markers.getBounds(), { paddingBottomRight: [0, 300]});
   }
 
   function saveGeographies(geog) {
