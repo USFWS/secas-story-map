@@ -1,0 +1,53 @@
+.splash-screen {
+  border-radius: 5px;
+  max-height: 70vh;
+  opacity: 0;
+  overflow-y: scroll;
+  position: absolute;
+
+  &.active {
+    background: white;
+    bottom: 0;
+    left: 0;
+    opacity: 1;
+    padding: 3em 3% 3%;
+    top: 0;
+    width: 100%;
+    z-index: 2000;
+
+    @media (min-width: 700px) {
+      bottom: auto;
+      left: 50%;
+      margin-left: -300px;
+      margin-top: -400px;
+      top: 50%;
+      width: 600px;
+    }
+  }
+}
+
+.splash-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.splash-background {
+
+  &.active {
+    background: rgba(15, 15, 15, .6);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1999;
+  }
+}
+
+.splash-content {
+  img {
+    display: block;
+    margin: auto;
+  }
+}

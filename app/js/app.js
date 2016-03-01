@@ -2,6 +2,7 @@
   'use strict';
 
   var map = require('./map');
+  var splash = require('./splash');
   var infoWindow = require('./infowindow');
   var about = require('./about');
   var gallery = require('./gallery');
@@ -13,7 +14,7 @@
   data.init('./data/projects.js');
 
   infoWindow.init();
-
+  splash.init();
   about.init();
 
   emitter.on('projects:loaded', function (projectData) {

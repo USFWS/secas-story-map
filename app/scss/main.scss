@@ -1,17 +1,23 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+
+* {
   box-sizing: inherit;
+
+  &:after,
+  &:before {
+    box-sizing: inherit;
+  }
 }
 
-@import "vendor/normalize";
-@import "vendor/leaflet";
-@import "fonts";
-
-@import "links";
-@import "map";
-@import "gallery";
-@import "info-window";
-@import "about";
-@import "themes";
+@import 'vendor/normalize';
+@import 'vendor/leaflet';
+@import 'fonts';
+@import 'links';
+@import 'map';
+@import 'gallery';
+@import 'info-window';
+@import 'about';
+@import 'themes';
+@import 'splash';
