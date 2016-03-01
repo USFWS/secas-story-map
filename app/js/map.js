@@ -2,8 +2,8 @@
   'use strict';
 
   var L = require('leaflet');
-  var randomColor = require('randomcolor');
   var _ = require('./util')._;
+  var dom = require('./util').dom;
   var emitter = require('./mediator');
   var icons = require('./icons');
 
@@ -18,14 +18,22 @@
   function init(opts) {
     options = _.defaults({}, opts, defaults);
     createMap();
+    createZoomToFullExtent();
     addBasemap();
     registerHandlers();
     if (options.data) addLayers();
   }
 
   function registerHandlers() {
+    options.fullExtent.addEventListener('click', zoomToFullExtent);
     emitter.on('project:click', displayGeography);
     emitter.on('geographies:loaded', saveGeographies);
+  }
+
+  function destroy() {
+    options.fullExtent.removeEventListener('click', zoomToFullExtent);
+    emitter.off('project:click', displayGeography);
+    emitter.off('geographies:loaded', saveGeographies);
   }
 
   function createMap() {
@@ -35,6 +43,14 @@
     });
   }
 
+  function createZoomToFullExtent() {
+    options.fullExtent = dom.create('button', 'zoom-to-full-extent', document.body);
+    options.fullExtent.setAttribute('title', 'Zoom to full extent');
+    options.imgExtent = dom.create('img', 'full-extent-img', options.fullExtent);
+    options.imgExtent.setAttribute('src', './images/full-extent.svg');
+
+  }
+
   function addBasemap() {
     L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png').addTo(map);
   }
@@ -42,7 +58,7 @@
   function addLayers() {
     geogLayer = L.layerGroup().addTo(map);
 
-    var markers = L.geoJson(options.data, {
+    options.markers = L.geoJson(options.data, {
       onEachFeature: function(feature, layer) {
         layer.on({ click: onMarkerClick });
       },
@@ -61,7 +77,7 @@
       }
     }).addTo(map);
 
-    map.fitBounds(markers.getBounds(), { paddingBottomRight: [0, 300]});
+    map.fitBounds(options.markers.getBounds(), { paddingBottomRight: [0, 300]});
   }
 
   function saveGeographies(geog) {
@@ -90,5 +106,10 @@
     emitter.emit('gallery:close');
   }
 
+  function zoomToFullExtent() {
+    map.fitBounds(options.markers.getBounds(), { paddingBottomRight: [0, 300]});
+  }
+
   module.exports.init = init;
+  module.exports.destroy = destroy;
 })();
