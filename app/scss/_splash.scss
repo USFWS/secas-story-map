@@ -26,9 +26,15 @@
 }
 
 .splash-close {
+  background: #369;
+  border: 2px solid darken(#369, 20);
+  border-radius: 5px;
+  color: white;
+  font-size: 1.2em;
+  padding: 7px;
   position: absolute;
-  right: 15px;
-  top: 15px;
+  right: 25px;
+  top: 25px;
 }
 
 .splash-background {

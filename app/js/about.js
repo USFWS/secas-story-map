@@ -6,7 +6,8 @@
   var emitter = require('./mediator');
 
   var options = {},
-      active = false;
+      active = false,
+      activeClass = 'active';
 
   function init() {
     createModal();
@@ -19,14 +20,17 @@
     options.modal = dom.create('aside', 'about-modal', document.body);
     options.modalContent = dom.create('section', 'about-content', options.modal);
     options.close = dom.create('button', 'about-close', options.modal);
+    options.background = dom.create('div', 'about-background', document.body);
 
     options.button.innerHTML = 'About';
+    options.button.setAttribute('title', 'About this map');
     options.close.innerHTML = 'Close';
   }
 
   function registerHandlers() {
     options.button.addEventListener('click', toggle);
     options.close.addEventListener('click', toggle);
+    options.background.addEventListener('click', hide);
     document.body.addEventListener('keyup', aboutKeyup);
   }
 
@@ -40,13 +44,15 @@
 
   function show() {
     active = true;
-    dom.addClass(options.modal, 'active');
+    dom.addClass(options.modal, activeClass);
+    dom.addClass(options.background, activeClass);
     emitter.emit('infowindow:close');
   }
 
   function hide() {
     active = false;
-    dom.removeClass(options.modal, 'active');
+    dom.removeClass(options.modal, activeClass);
+    dom.removeClass(options.background, activeClass);
   }
 
   function toggle() {
