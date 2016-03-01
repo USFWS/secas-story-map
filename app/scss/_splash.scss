@@ -1,27 +1,26 @@
 .splash-screen {
-  border-radius: 5px;
-  max-height: 70vh;
   opacity: 0;
   overflow-y: scroll;
   position: absolute;
 
   &.active {
     background: white;
-    bottom: 0;
     left: 0;
     opacity: 1;
     padding: 3em 3% 3%;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     width: 100%;
     z-index: 2000;
 
     @media (min-width: 700px) {
+      border-radius: 5px;
       bottom: auto;
       left: 50%;
-      margin-left: -300px;
-      margin-top: -400px;
+      max-height: 80vh;
       top: 50%;
-      width: 600px;
+      transform: translateY(-50%) translateX(-50%);
+      width: 700px;
     }
   }
 }
