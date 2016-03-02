@@ -1,6 +1,8 @@
 (function () {
   'use strict';
 
+  var store = require('store');
+
   var dom = require('./util').dom;
   var template = require('../templates/splash.jade');
 
@@ -16,11 +18,19 @@
     dom.addClass(options.background, activeClass);
     options.close = dom.create('button', 'splash-close', options.splash);
     options.close.innerHTML = 'Close';
+    options.checkbox = document.querySelector('.dont-show-again');
+    if ( store.get('disableSplashScreen') ) close();
     registerHandlers();
+  }
+
+  function setLocalStorage() {
+    if (options.checkbox.checked) store.set('disableSplashScreen', true);
+    else store.set('disableSplashScreen', true);
   }
 
   function registerHandlers() {
     options.close.addEventListener('click', close);
+    options.checkbox.addEventListener('click', setLocalStorage);
     options.background.addEventListener('click', close);
   }
 
