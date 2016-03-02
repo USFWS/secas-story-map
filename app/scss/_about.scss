@@ -4,7 +4,7 @@
   position: absolute;
 
   &.active {
-    background: white;
+    background: $white;
     left: 0;
     opacity: 1;
     padding: 3em 3% 3%;
@@ -26,21 +26,21 @@
 }
 
 .about-close {
-  background: #369;
-  border: 2px solid darken(#369, 20);
+  background: $blue;
+  border: 2px solid darken($blue, 20);
   border-radius: 5px;
-  color: white;
+  color: $white;
   font-size: 1.2em;
   padding: 7px;
   position: fixed;
-  right: 25px;
-  top: 25px;
+  right: 10px;
+  top: 10px;
 }
 
 .about-background {
 
   &.active {
-    background: rgba(15, 15, 15, .6);
+    background: $backdrop;
     bottom: 0;
     left: 0;
     position: fixed;
@@ -51,7 +51,7 @@
 }
 
 .about-button {
-  background: white;
+  background: $white;
   border: 0;
   border-radius: 4px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.65);
