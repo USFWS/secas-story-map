@@ -6,7 +6,8 @@
   var _ = {
     defaults: require('lodash.defaults'),
     find: require('lodash.find'),
-    slugify: require('underscore.string/slugify')
+    slugify: require('underscore.string/slugify'),
+    random: require('lodash.sample')
   };
 
   var dom = {
