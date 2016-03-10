@@ -4,7 +4,15 @@
   var store = require('store');
 
   var dom = require('./util').dom;
+  var _ = require('./util')._;
   var template = require('../templates/splash.jade');
+
+  var backgrounds = [
+    {
+      "src": "../images/splash-photos/lake-mattamuskeet-sunset.gif",
+      "caption": "Lake Mattamuskeet National Wildlife Refuge at sunset. Photo: Keith Ramos; USFWS"
+    }
+  ];
 
   var options = {};
   var activeClass = 'active';
@@ -21,6 +29,14 @@
     options.checkbox = document.querySelector('.dont-show-again');
     if ( store.get('disableSplashScreen') ) close();
     registerHandlers();
+    randomImage();
+  }
+
+  function randomImage() {
+    var img = _.random(backgrounds);
+    var splash = document.querySelector('.splash-screen.active');
+    splash.style.backgroundImage = 'url(' + img.src + ')';
+    // Emit the background image so we can include photo credit in the About page
   }
 
   function setLocalStorage() {
