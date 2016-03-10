@@ -3,6 +3,7 @@
 
   var store = require('store');
 
+  var emitter = require('./mediator');
   var dom = require('./util').dom;
   var _ = require('./util')._;
   var template = require('../templates/splash.jade');
@@ -36,7 +37,7 @@
     var img = _.random(backgrounds);
     var splash = document.querySelector('.splash-screen.active');
     splash.style.backgroundImage = 'url(' + img.src + ')';
-    // Emit the background image so we can include photo credit in the About page
+    emitter.emit('splash:background', img);
   }
 
   function setLocalStorage() {
