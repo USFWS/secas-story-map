@@ -28,6 +28,7 @@
   }
 
   function registerHandlers() {
+    emitter.on('splash:background', addPhotoCredit);
     options.button.addEventListener('click', toggle);
     options.close.addEventListener('click', toggle);
     options.background.addEventListener('click', hide);
@@ -57,6 +58,12 @@
 
   function toggle() {
     active ? hide() : show(); //jshint ignore:line
+  }
+
+  function addPhotoCredit(img) {
+    var heading = '<h3>Splash Screen Photo</h3>';
+    var caption = '<a href="' + img.src + '">' + img.caption + '</a>';
+    options.modalContent.innerHTML += (heading + caption);
   }
 
   module.exports.init = init;
