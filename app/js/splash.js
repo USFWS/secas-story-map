@@ -10,7 +10,7 @@
 
   var backgrounds = [
     {
-      "src": "../images/splash-photos/lake-mattamuskeet-sunset.gif",
+      "src": "http://usfws.github.io/secas-story-map/images/splash-photos/lake-mattamuskeet-sunset.gif",
       "caption": "Lake Mattamuskeet National Wildlife Refuge at sunset. Photo: Keith Ramos; USFWS"
     }
   ];
