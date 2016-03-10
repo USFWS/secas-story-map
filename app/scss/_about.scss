@@ -1,10 +1,12 @@
 .about-modal {
+  height: 0;
   opacity: 0;
   overflow-y: scroll;
   position: absolute;
 
   &.active {
     background: $white;
+    height: auto;
     left: 0;
     opacity: 1;
     padding: 3em 3% 3%;
