@@ -14,8 +14,8 @@
   data.init('./data/projects.js');
 
   infoWindow.init();
-  splash.init();
   about.init();
+  splash.init();
 
   emitter.on('projects:loaded', function (projectData) {
     projects = projectData;
