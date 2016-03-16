@@ -62,7 +62,9 @@
 
   function addPhotoCredit(img) {
     var heading = '<h3>Splash Screen Photo</h3>';
-    var caption = '<a href="' + img.src + '">' + img.caption + '</a>';
+    var caption;
+    if (img.full) caption = '<a href="' + img.full + '">' + img.caption + '</a>';
+    else caption = '<a href="' + img.src + '">' + img.caption + '</a>';
     options.modalContent.innerHTML += (heading + caption);
   }
 
