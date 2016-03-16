@@ -7,21 +7,7 @@
   var dom = require('./util').dom;
   var _ = require('./util')._;
   var template = require('../templates/splash.jade');
-
-  var backgrounds = [
-    {
-      "src": "http://usfws.github.io/secas-story-map/images/splash-photos/lake-mattamuskeet-sunset.gif",
-      "caption": "Lake Mattamuskeet National Wildlife Refuge at sunset. Photo: Keith Ramos; USFWS"
-    },
-    {
-      "src": "http://usfws.github.io/secas-story-map/images/splash-photos/apple-orchards-falls-virginia.png",
-      "caption": "Apple Orchards Falls, Virginia. Photo: Matthew Cimitile"
-    },
-    {
-      "src": "http://usfws.github.io/secas-story-map/images/splash-photos/black-mountain-park-georgia.png",
-      "caption": "Black Mountain Park, Georgia. Photo: Matthew Cimitile"
-    }
-  ];
+  var backgrounds = require('./splash-images');
 
   var options = {};
   var activeClass = 'active';
@@ -43,8 +29,9 @@
 
   function randomImage() {
     var img = _.random(backgrounds);
+    var imgRoot = 'http://usfws.github.io/secas-story-map/images/splash-photos/';
     var splash = document.querySelector('.splash-screen.active');
-    splash.style.backgroundImage = 'url(' + img.src + ')';
+    splash.style.backgroundImage = 'url(' + imgRoot + img.src + ')';
     emitter.emit('splash:background', img);
   }
 
