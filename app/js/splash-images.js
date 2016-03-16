@@ -46,8 +46,20 @@
     },
     {
       "src": "slash-pine-flatwoods.png",
-      "caption": "Slash Pine (<em>Pinus elliottii</em>) flatwoods in Osceola National Forest. Photo:<a href='https://www.flickr.com/photos/79666107@N00/'>Chris M Morris</a> <a href='https://creativecommons.org/licenses/by/2.0/'>CC BY 2.0</a>",
+      "caption": "Slash Pine (<em>Pinus elliottii</em>) flatwoods in Osceola National Forest. Photo: <a href='https://www.flickr.com/photos/79666107@N00/'>Chris M Morris</a> <a href='https://creativecommons.org/licenses/by/2.0/'>CC BY 2.0</a>",
       "full": "https://flic.kr/p/9LmmDb"
+    },
+    {
+      "src": "gulf-pier-sunset.png",
+      "caption": "Sunset on the Gulf. Photo: Greg Wathen"
+    },
+    {
+      "src": "titmouse-closeup.png",
+      "caption": "Titmouse on an icy branch. Photo: Greg Wathen"
+    },
+    {
+      "src": "delta-national-forest.png",
+      "caption": "Setting decoys at Delta National Forest.  Photo: Blair-Tirpak"
     }
   ];
 })();
