@@ -60,6 +60,14 @@
     {
       "src": "delta-national-forest.png",
       "caption": "Setting decoys at Delta National Forest.  Photo: Blair-Tirpak"
+    },
+    {
+      "src": "big-lake-national-wildlife-refuge.png",
+      "caption": "Big Lake National Wildlife Refuge.  Photo: USFWS"
+    },
+    {
+      "src": "white-river-national-wildlife-refuge.png",
+      "caption": "Flooded boardwalk at White River National Wildlife Refuge.  Photo: USFWS"
     }
   ];
 })();
