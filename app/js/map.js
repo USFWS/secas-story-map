@@ -108,6 +108,7 @@
 
   function zoomToFullExtent() {
     map.fitBounds(options.markers.getBounds(), { paddingBottomRight: [0, 300]});
+    emitter.emit('zoomtofullextent');
   }
 
   module.exports.init = init;
