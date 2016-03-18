@@ -52,7 +52,7 @@
   }
 
   function addBasemap() {
-    L.tileLayer('http://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png').addTo(map);
+    L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png').addTo(map);
   }
 
   function addLayers() {
