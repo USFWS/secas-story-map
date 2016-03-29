@@ -5,6 +5,28 @@
       "type": "Feature",
       "properties": {
         "cons": "GCP LCC",
+        "title": "Coarse filter Approach to Landscape Conservation Design",
+        "description": "Using spatial datasets to determine where habitat exists, where it will change, and where it can be restored.",
+        "location": "Just north of Red River in OK",
+        "url": "http://gulfcoastprairielcc.org/news-information/news-and-events-container/coarse-filter-approach-to-landscape-conservation-design/",
+        "photo": "gcp-lcc-gcva.jpg",
+        "caption": "North Texas Prairie near the Red River. Photo: Bill Bartush, USFWS",
+        "theme": "Smart Planning",
+        "geography": "gcplcc",
+        "shapefiles": "Delivered"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.218017,
+          34.049758
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cons": "GCP LCC",
         "title": "Prioritizing Grasslands in South-Central U.S.",
         "description": "New Grassland Decision Support Tool helps partners find the best places to invest for conservation.",
         "location": "North/central TX, anywhere in green space: http://www.opjv.org/#!ecoregions/c10d6",
@@ -20,6 +42,28 @@
         "coordinates": [
           -97.4518,
           33.1746
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "cons": "GCP LCC",
+        "title": "Gulf Coast Vulnerability Assessment",
+        "description": "Award-winning report evaluates Gulf-wide effects of climate change, sea level rise, and urbanization",
+        "location": "TX Gulf coast south of Houston (~ Aransas NWR)",
+        "url": "http://gulfcoastprairielcc.org/news-information/news-and-events-container/gulf-coast-vulnerability-assessment",
+        "photo": "gcp-lcc-coarse-filter-lcd.jpg",
+        "caption": "Kemp's Ridley sea turtle - a species vulnerable to sea level rise. Photo: Northeast Region Sea Turtle Stranding Network",
+        "theme": "Building on Existing Partnerships",
+        "geography": "wetland-migration",
+        "shapefiles": "Delivered"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2474155,
+          28.1011396
         ]
       }
     },
@@ -394,50 +438,6 @@
         "coordinates": [
           -81.4513,
           27.6262
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "cons": "GCP LCC",
-        "title": "Coarse filter Approach to Landscape Conservation Design",
-        "description": "Using spatial datasets to determine where habitat exists, where it will change, and where it can be restored.",
-        "location": "Just north of Red River in OK",
-        "url": "http://gulfcoastprairielcc.org/news-information/news-and-events-container/coarse-filter-approach-to-landscape-conservation-design/",
-        "photo": "gcp-lcc-coarse-filter-lcd.jpg",
-        "caption": "North Texas Prairie near the Red River. Photo: Bill Bartush, USFWS",
-        "theme": "Smart Planning",
-        "geography": "gcplcc",
-        "shapefiles": "Delivered"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -98.218017,
-          34.049758
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "cons": "GCP Lcc",
-        "title": "Gulf Coast Vulnerability Assessment",
-        "description": "Award-winning report evaluates Gulf-wide effects of climate change, sea level rise, and urbanization",
-        "location": "TX Gulf coast south of Houston (~ Aransas NWR)",
-        "url": "http://gulfcoastprairielcc.org/news-information/news-and-events-container/gulf-coast-vulnerability-assessment",
-        "photo": "gcp-lcc-gcva.jpg",
-        "caption": "Kemp's Ridley sea turtle - a species vulnerable to sea level rise. Photo: Northeast Region Sea Turtle Stranding Network",
-        "theme": "Building on Existing Partnerships",
-        "geography": "wetland-migration",
-        "shapefiles": "Delivered"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -97.2474155,
-          28.1011396
         ]
       }
     }
