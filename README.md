@@ -14,9 +14,13 @@ To kick off the development server and all pre-requisite tasks:
 
 `npm start`
 
+The `dist` folder is the directory used to serve the app.
+
 To build a production ready version of the app use:
 
 `npm run build`
+
+The optimized application is built into the `dist` folder, which you can copy onto your web server.
 
 To publish a production ready demo to GitHub Pages:
 
@@ -25,6 +29,18 @@ To publish a production ready demo to GitHub Pages:
 To visualize packages contributing to bundle file size:
 
 `npm run inspect:bundle`
+
+This task can help you uncover modules that are bloating your final javascript bundle size.
+
+### Tasks
+
+#### Images
+
+Any image in the `app/images/project-photos` directory will be resized to create a 175px x 125px thumbnail image, which is used in the image gallery at the bottom of the screen and a 500px wide image for the infowindow that appears on the right side.  These files are copied to `dist/images/photos` for consumption by the application.  You can change the sizes of these images by editing `build/resize-images.js`.  This task includes a file watcher; any time you add a new image it will automatically run.
+
+#### SVG
+
+This task watches the `app/images/markers/` directory for any `svg` file.  It optimizes the svg using imagemin and imagemin-svgo.  Files are copied to `dist/images` for use in the application.  Any time you add a new svg this task will automatically run.
 
 ### License
 
