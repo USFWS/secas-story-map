@@ -42,6 +42,10 @@ Any image in the `app/images/project-photos` directory will be resized to create
 
 This task watches the `app/images/markers/` directory for any `svg` file.  It optimizes the svg using imagemin and imagemin-svgo.  Files are copied to `dist/images` for use in the application.  Any time you add a new svg this task will automatically run.
 
+#### Project Data
+
+Project data is stored as GeoJSON in the `app/data` directory.  One file represents the tabular data neccessary (stored in a Google sheet, downloaded as an CSV, converted to GeoJSON) to display markers on the map.  The other file represents the area of interest associated with that marker displayed as a polygon.  Both of these files are watched by the `npm start` task and minified to reduce file size.
+
 ### License
 
 This project is in the Public Domain.
