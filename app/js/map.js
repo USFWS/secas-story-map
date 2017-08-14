@@ -48,11 +48,16 @@
     options.fullExtent.setAttribute('title', 'Zoom to full extent');
     options.imgExtent = dom.create('img', 'full-extent-img', options.fullExtent);
     options.imgExtent.setAttribute('src', './images/full-extent.svg');
-
   }
 
   function addBasemap() {
-    L.tileLayer('http://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png').addTo(map);
+    L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
+    	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    	subdomains: 'abcd',
+    	minZoom: 0,
+    	maxZoom: 18,
+    	ext: 'png'
+    }).addTo(map);
   }
 
   function addLayers() {
