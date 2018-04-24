@@ -4,34 +4,41 @@
   "description": "A story map of conservation projects",
   "main": "app.js",
   "browserify": {
-    "transform": [
-      "jadeify"
-    ]
+    "transform": ["jadeify"]
   },
   "scripts": {
-    "update:projects": "curl 'https://docs.google.com/spreadsheets/d/13FIjoE0x6VGYkxhp7YQpuzbTIEuFTn1AdoGeVlzDGeY/pub?gid=451142798&single=true&output=csv' | csv2geojson > app/data/projects.geojson",
+    "update:projects":
+      "curl 'https://docs.google.com/spreadsheets/d/13FIjoE0x6VGYkxhp7YQpuzbTIEuFTn1AdoGeVlzDGeY/pub?gid=451142798&single=true&output=csv' | csv2geojson > app/data/projects.geojson",
     "postupdate:projects": "npm run shrink-projects",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-js": "browserify app/js/app.js | uglifyjs -mc > dist/js/bundle.js",
     "watch-js": "watchify app/js/app.js -o dist/js/bundle.js -dv",
     "watch-sass": "node-sass -w app/scss/main.scss dist/css/main.css",
-    "build-sass": "node-sass --output-style compressed app/scss/main.scss dist/css/main.css",
-    "shrink-geog": "json-minify app/data/geographies.geojson > dist/data/geographies.js",
-    "shrink-projects": "json-minify app/data/projects.geojson > dist/data/projects.js",
+    "build-sass":
+      "node-sass --output-style compressed app/scss/main.scss dist/css/main.css",
+    "shrink-geog":
+      "json-minify app/data/geographies.geojson > dist/data/geographies.js",
+    "shrink-projects":
+      "json-minify app/data/projects.geojson > dist/data/projects.js",
     "shrink-json": "npm run shrink-geog & npm run shrink-projects",
     "preshrink-img": "rimraf dist/images/*",
-    "shrink-img": "npm run cp-splash & imagemin app/images/*.png dist/images/ -p & node build/resize-images && node build/shrink-svg",
+    "shrink-img":
+      "npm run cp-splash & imagemin app/images/*.png dist/images/ -p & node build/resize-images && node build/shrink-svg",
     "cp-splash": "ncp app/images/splash-photos dist/images/splash-photos",
     "shrink-html": "htmlmin -o dist/index.html app/index.html",
     "watch-img": "watch 'npm run shrink-img' app/images",
     "serve": "browser-sync start --server dist --files 'dist/**/*'",
-    "optimize": "npm run shrink-html & npm run shrink-json & npm run shrink-img",
+    "optimize":
+      "npm run shrink-html & npm run shrink-json & npm run shrink-img & npm run shrink-svg",
     "copy-fonts": "ncp app/fonts/ dist/fonts/",
     "prebuild": "node build/create-dist",
     "build": "npm run optimize & npm run build-sass & npm run build-js",
-    "prestart": "node build/create-dist",
-    "start": "npm run optimize & npm run watch-sass & npm run watch-js & npm run serve",
-    "inspect:bundle": "browserify --full-paths app/js/app.js | uglifyjs -mc | Discify --open",
+    "prestart":
+      "node build/create-dist & npm run copy-fonts & npm run build-sass",
+    "start":
+      "npm run optimize & npm run watch-sass & npm run watch-js & npm run serve",
+    "inspect:bundle":
+      "browserify --full-paths app/js/app.js | uglifyjs -mc | Discify --open",
     "publish:demo": "npm run build && gh-pages -d dist"
   },
   "keywords": [
@@ -60,7 +67,7 @@
     "node-sass": "^3.4.2",
     "npm-check-updates": "^2.5.7",
     "rimraf": "^2.5.1",
-    "sharp": "^0.12.2",
+    "sharp": "^0.20.1",
     "uglifyjs": "^2.4.10",
     "watch": "^0.17.1",
     "watchify": "^3.7.0"
