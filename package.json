@@ -29,7 +29,7 @@
     "watch-img": "watch 'npm run shrink-img' app/images",
     "serve": "browser-sync start --server dist --files 'dist/**/*'",
     "optimize":
-      "npm run shrink-html & npm run shrink-json & npm run shrink-img & npm run shrink-svg",
+      "npm run shrink-html & npm run shrink-json & npm run shrink-img & node build/shrink-svg",
     "copy-fonts": "ncp app/fonts/ dist/fonts/",
     "prebuild": "node build/create-dist",
     "build": "npm run optimize & npm run build-sass & npm run build-js",
