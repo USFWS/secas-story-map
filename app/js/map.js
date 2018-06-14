@@ -1,18 +1,18 @@
-(function () {
-  'use strict';
+(function() {
+  "use strict";
 
-  var L = require('leaflet');
-  var _ = require('./util')._;
-  var dom = require('./util').dom;
-  var emitter = require('./mediator');
-  var icons = require('./icons');
+  var L = require("leaflet");
+  var _ = require("./util")._;
+  var dom = require("./util").dom;
+  var emitter = require("./mediator");
+  var icons = require("./icons");
 
-  L.Icon.Default.imagePath = './images';
+  L.Icon.Default.imagePath = "./images";
 
   var map, options, geographies, geogLayer;
   var defaults = {
     zoom: 5,
-    element: 'map'
+    element: "map"
   };
 
   function init(opts) {
@@ -25,15 +25,15 @@
   }
 
   function registerHandlers() {
-    options.fullExtent.addEventListener('click', zoomToFullExtent);
-    emitter.on('project:click', displayGeography);
-    emitter.on('geographies:loaded', saveGeographies);
+    options.fullExtent.addEventListener("click", zoomToFullExtent);
+    emitter.on("project:click", displayGeography);
+    emitter.on("geographies:loaded", saveGeographies);
   }
 
   function destroy() {
-    options.fullExtent.removeEventListener('click', zoomToFullExtent);
-    emitter.off('project:click', displayGeography);
-    emitter.off('geographies:loaded', saveGeographies);
+    options.fullExtent.removeEventListener("click", zoomToFullExtent);
+    emitter.off("project:click", displayGeography);
+    emitter.off("geographies:loaded", saveGeographies);
   }
 
   function createMap() {
@@ -44,20 +44,32 @@
   }
 
   function createZoomToFullExtent() {
-    options.fullExtent = dom.create('button', 'zoom-to-full-extent', document.body);
-    options.fullExtent.setAttribute('title', 'Zoom to full extent');
-    options.imgExtent = dom.create('img', 'full-extent-img', options.fullExtent);
-    options.imgExtent.setAttribute('src', './images/full-extent.svg');
+    options.fullExtent = dom.create(
+      "button",
+      "zoom-to-full-extent",
+      document.body
+    );
+    options.fullExtent.setAttribute("title", "Zoom to full extent");
+    options.imgExtent = dom.create(
+      "img",
+      "full-extent-img",
+      options.fullExtent
+    );
+    options.imgExtent.setAttribute("src", "./images/full-extent.svg");
   }
 
   function addBasemap() {
-    L.tileLayer('http://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}', {
-    	attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    	subdomains: 'abcd',
-    	minZoom: 0,
-    	maxZoom: 18,
-    	ext: 'png'
-    }).addTo(map);
+    L.tileLayer(
+      "http://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}",
+      {
+        attribution:
+          'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        subdomains: "abcd",
+        minZoom: 0,
+        maxZoom: 18,
+        ext: "png"
+      }
+    ).addTo(map);
   }
 
   function addLayers() {
@@ -66,23 +78,12 @@
     options.markers = L.geoJson(options.data, {
       onEachFeature: function(feature, layer) {
         layer.on({ click: onMarkerClick });
-      },
-      pointToLayer: function (feature, latlng) {
-        var props = feature.properties;
-        switch(props.theme) {
-          case 'Smart Planning':
-            return L.marker(latlng, { icon: icons.orange });
-          case 'Building on Existing Partnerships':
-            return L.marker(latlng, { icon: icons.blue });
-          case 'Saving Dollars and Improving Efficiencies':
-            return L.marker(latlng, { icon: icons.green });
-          case 'Achieving Conservation':
-            return L.marker(latlng, { icon: icons.purple });
-        }
       }
     }).addTo(map);
 
-    map.fitBounds(options.markers.getBounds(), { paddingBottomRight: [0, 300]});
+    map.fitBounds(options.markers.getBounds(), {
+      paddingBottomRight: [0, 300]
+    });
   }
 
   function saveGeographies(geog) {
@@ -90,14 +91,14 @@
   }
 
   function onMarkerClick(e) {
-    emitter.emit('project:click', e.target.feature);
+    emitter.emit("project:click", e.target.feature);
   }
 
   function displayGeography(office) {
     var clientWidth = document.documentElement.clientWidth;
     geogLayer.clearLayers();
     var currentGeog = L.geoJson(geographies, {
-      filter: function (feature) {
+      filter: function(feature) {
         return feature.properties.name === office.properties.geography;
       }
     });
@@ -105,15 +106,16 @@
 
     // Decide if we should make room on the map for the infowindow
     if (clientWidth > 1000)
-      map.fitBounds(currentGeog.getBounds(), { paddingBottomRight: [500, 0]});
-    else
-      map.fitBounds(currentGeog.getBounds());
-    emitter.emit('gallery:close');
+      map.fitBounds(currentGeog.getBounds(), { paddingBottomRight: [500, 0] });
+    else map.fitBounds(currentGeog.getBounds());
+    emitter.emit("gallery:close");
   }
 
   function zoomToFullExtent() {
-    map.fitBounds(options.markers.getBounds(), { paddingBottomRight: [0, 300]});
-    emitter.emit('zoomtofullextent');
+    map.fitBounds(options.markers.getBounds(), {
+      paddingBottomRight: [0, 300]
+    });
+    emitter.emit("zoomtofullextent");
   }
 
   module.exports.init = init;
