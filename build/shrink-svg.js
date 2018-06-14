@@ -1,12 +1,8 @@
-(function () {
-  'use strict';
+const imagemin = require("imagemin");
+const imageminSvgo = require("imagemin-svgo");
 
-  var Imagemin = require('imagemin');
-  var imageminSvgo = require('imagemin-svgo');
+const output = "dist/images/";
 
-  new Imagemin()
-    .src('app/images/markers/*.svg')
-    .dest('dist/images')
-    .use(imageminSvgo())
-    .run();
-})();
+imagemin(["app/images/markers/*.svg"], output, {
+  use: [imageminSvgo()]
+}).catch(console.log);
