@@ -1,35 +1,37 @@
-(function () {
-  'use strict';
+(function() {
+  "use strict";
 
-  var map = require('./map');
-  var splash = require('./splash');
-  var infoWindow = require('./infowindow');
-  var about = require('./about');
-  var gallery = require('./gallery');
-  var data = require('./data-access');
-  var emitter = require('./mediator');
+  var parallel = require("async/parallel");
+
+  var map = require("./map");
+  var splash = require("./splash");
+  var infoWindow = require("./infowindow");
+  var about = require("./about");
+  var gallery = require("./gallery");
+  var data = require("./data-access");
+  var emitter = require("./mediator");
 
   var projects;
 
-  data.init('./data/projects.js');
+  parallel(
+    {
+      projects: data.getFile.bind(null, "projects"),
+      geographies: data.getFile.bind(null, "geographies")
+    },
+    function(err, results) {
+      infoWindow.init();
+      about.init();
+      splash.init();
 
-  infoWindow.init();
-  about.init();
-  splash.init();
+      map.init({
+        center: [37.174019, -82.604078],
+        projects: results.projects,
+        geographies: results.geographies
+      });
 
-  emitter.on('projects:loaded', function (projectData) {
-    projects = projectData;
-
-    map.init({
-      element: 'map',
-      center: [37.174019, -82.604078],
-      data: projects
-    });
-
-    gallery.init({
-      data: projects.features
-    });
-
-  });
-
+      gallery.init({
+        data: results.projects.features
+      });
+    }
+  );
 })();
