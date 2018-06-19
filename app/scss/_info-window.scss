@@ -6,7 +6,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  transition: all .5s;
+  transition: all 0.5s;
   width: 100%;
   z-index: -1;
 
@@ -22,17 +22,13 @@
     max-height: 95vh;
     opacity: 1;
     right: 10px;
-    top: auto;
+    top: 50px;
     transform: translateX(98%);
     width: auto;
     z-index: 401;
 
     &.active {
       transform: translateX(0);
-
-      .info-window-toggle::after {
-        content: '\25B6';
-      }
     }
   }
 }
@@ -60,9 +56,9 @@
 .info-window-caption {
   caption-side: bottom;
   display: table-caption;
-  font-size: .9em;
-  padding: .5em;
-  margin: 0 .25em;
+  font-size: 0.9em;
+  padding: 0.5em;
+  margin: 0 0.25em;
 }
 
 .project-description {
@@ -79,28 +75,11 @@
   font-size: 1.2em;
   padding: 7px;
   position: absolute;
-  right: 15px;
+  left: 15px;
   top: 15px;
 
   &::after {
-    content: 'Close';
-  }
-
-  @media (min-width: 1000px) {
-    background: white;
-    border: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    color: black;
-    font-size: 1em;
-    left: -23px;
-    right: auto;
-    top: 5px;
-    z-index: -1;
-
-    &::after {
-      content: '\25C0';
-    }
+    content: "Close";
   }
 }
 
