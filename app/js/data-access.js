@@ -1,41 +1,34 @@
-(function () {
-  'use strict';
+(function() {
+  "use strict";
 
-  var xhr = require('xhr');
-  var emitter = require('./mediator');
-  var _ = require('./util')._;
+  var xhr = require("xhr");
+  var emitter = require("./mediator");
+  var _ = require("./util")._;
 
-  var projects, geographies;
+  var data = {};
 
-  function init(path) {
-    xhr.get(path, function (err, res) {
-      projects = JSON.parse(res.body);
-      emitter.emit('projects:loaded', projects);
+  function getFile(filename, cb) {
+    var path = "./data/" + filename + ".js";
+    xhr.get(path, function(err, res) {
+      if (err) return cb(err);
+      if (res.statusCode >= 400)
+        return cb(
+          new Error("An error occurred with status code" + res.statusCode)
+        );
+      var result = JSON.parse(res.body);
+      data[filename] = result;
+      return cb(null, result);
     });
-
-    xhr.get('./data/geographies.js', function (err, res) {
-      geographies = JSON.parse(res.body);
-      emitter.emit('geographies:loaded', geographies);
-    });
-  }
-
-  function getGeographies() {
-    return geographies;
-  }
-
-  function getProjects() {
-    return projects;
   }
 
   function getProject(projectName) {
-    return _.find(projects.features, function (project) {
-      return project.properties.title.toLowerCase() === projectName.toLowerCase();
+    return _.find(data.projects.features, function(project) {
+      return (
+        project.properties.title.toLowerCase() === projectName.toLowerCase()
+      );
     });
   }
 
-  exports.getProjects = getProjects;
+  exports.getFile = getFile;
   exports.getProject = getProject;
-  exports.getGeographies = getGeographies;
-  exports.init = init;
-
 })();
