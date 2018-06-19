@@ -1,13 +1,13 @@
-(function () {
-  'use strict';
-  var imagesLoaded = require('imagesloaded');
+(function() {
+  "use strict";
+  var imagesLoaded = require("imagesloaded");
 
-  var dom = require('./util').dom;
-  var emitter = require('./mediator');
-  var template  = require('../templates/detail.jade');
+  var dom = require("./util").dom;
+  var emitter = require("./mediator");
+  var template = require("../templates/detail.jade");
 
   var visible = false,
-      options = {};
+    options = {};
 
   function init() {
     createWindow();
@@ -15,17 +15,29 @@
   }
 
   function createWindow() {
-    options.container = dom.create('aside', 'info-window-container', document.body);
-    options.content = dom.create('section', 'info-window-content', options.container);
-    options.toggle = dom.create('button', 'info-window-toggle', options.container);
-    options.toggle.setAttribute('aria-label', 'Close');
+    options.container = dom.create(
+      "aside",
+      "info-window-container",
+      document.body
+    );
+    options.content = dom.create(
+      "section",
+      "info-window-content",
+      options.container
+    );
+    options.toggle = dom.create(
+      "button",
+      "info-window-toggle",
+      options.container
+    );
+    options.toggle.setAttribute("aria-label", "Close");
   }
 
   function registerHandlers() {
-    document.body.addEventListener('keydown', keydownHandler);
-    options.toggle.addEventListener('click', toggle);
-    emitter.on('project:click', render);
-    emitter.on('infowindow:close', hide);
+    document.body.addEventListener("keydown", keydownHandler);
+    options.toggle.addEventListener("click", toggle);
+    emitter.on("project:click", render);
+    emitter.on("zoomtofullextent", hide);
   }
 
   function keydownHandler(e) {
@@ -34,14 +46,15 @@
   }
 
   function show() {
-    dom.addClass(options.container, 'active');
+    dom.addClass(options.container, "active");
     visible = true;
-    emitter.emit('gallery:close', false);
+    emitter.emit("infowindow:open", true);
   }
 
   function hide() {
-    dom.removeClass(options.container, 'active');
+    dom.removeClass(options.container, "active");
     visible = false;
+    emitter.emit("infowindow:close", true);
   }
 
   function toggle() {
