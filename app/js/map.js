@@ -2,18 +2,27 @@
   "use strict";
 
   var L = require("leaflet");
+  var esri = require("esri-leaflet");
   var _ = require("./util")._;
   var dom = require("./util").dom;
   var emitter = require("./mediator");
   var icons = require("./icons");
 
-  L.Icon.Default.imagePath = "./images";
+  L.Icon.Default.imagePath = "./images/";
 
-  var map, options, geographies, geogLayer;
+  var map, options, geographies, geogLayer, secasBounds;
   var defaults = {
     zoom: 5,
     element: "map"
   };
+
+  var secas = esri.featureLayer({
+    url:
+      "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/SECAS_Boundary/FeatureServer/0",
+    style: function() {
+      return { color: "#368b37", weight: 2 };
+    }
+  });
 
   function init(opts) {
     options = _.defaults({}, opts, defaults);
@@ -21,13 +30,13 @@
     createZoomToFullExtent();
     addBasemap();
     registerHandlers();
-    if (options.data) addLayers();
+    secasBounds = L.geoJSON(options.secas).getBounds();
+    if (options.projects) addLayers();
   }
 
   function registerHandlers() {
     options.fullExtent.addEventListener("click", zoomToFullExtent);
     emitter.on("project:click", displayGeography);
-    emitter.on("geographies:loaded", saveGeographies);
   }
 
   function destroy() {
@@ -75,19 +84,23 @@
   function addLayers() {
     geogLayer = L.layerGroup().addTo(map);
 
-    options.markers = L.geoJson(options.data, {
+    options.markers = L.geoJson(options.projects, {
       onEachFeature: function(feature, layer) {
         layer.on({ click: onMarkerClick });
       }
     }).addTo(map);
 
-    map.fitBounds(options.markers.getBounds(), {
-      paddingBottomRight: [0, 300]
-    });
-  }
+    secas.addTo(map);
+    secas.once("load", function(evt) {
+      var bounds = L.latLngBounds([]);
+      secas.eachFeature(function(layer) {
+        var layerBounds = layer.getBounds();
+        bounds.extend(layerBounds);
+      });
 
-  function saveGeographies(geog) {
-    geographies = geog;
+      secasBounds = bounds;
+      map.fitBounds(bounds);
+    });
   }
 
   function onMarkerClick(e) {
@@ -97,7 +110,7 @@
   function displayGeography(office) {
     var clientWidth = document.documentElement.clientWidth;
     geogLayer.clearLayers();
-    var currentGeog = L.geoJson(geographies, {
+    var currentGeog = L.geoJson(options.geographies, {
       filter: function(feature) {
         return feature.properties.name === office.properties.geography;
       }
@@ -112,7 +125,7 @@
   }
 
   function zoomToFullExtent() {
-    map.fitBounds(options.markers.getBounds(), {
+    map.fitBounds(secasBounds, {
       paddingBottomRight: [0, 300]
     });
     emitter.emit("zoomtofullextent");
