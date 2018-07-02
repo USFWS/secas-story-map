@@ -74,12 +74,13 @@
   color: white;
   font-size: 1.2em;
   padding: 7px;
-  position: absolute;
-  left: 15px;
+  position: fixed;
+  right: 15px;
   top: 15px;
 
   &::after {
-    content: "Close";
+    content: "\2716";
+    font-weight: normal;
   }
 }
 
