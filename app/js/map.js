@@ -6,11 +6,10 @@
   var _ = require("./util")._;
   var dom = require("./util").dom;
   var emitter = require("./mediator");
-  var icons = require("./icons");
 
   L.Icon.Default.imagePath = "./images/";
 
-  var map, options, geographies, geogLayer, secasBounds;
+  var map, options, geogLayer, secasBounds;
   var defaults = {
     zoom: 5,
     element: "map"
@@ -42,7 +41,6 @@
   function destroy() {
     options.fullExtent.removeEventListener("click", zoomToFullExtent);
     emitter.off("project:click", displayGeography);
-    emitter.off("geographies:loaded", saveGeographies);
   }
 
   function createMap() {
@@ -72,7 +70,7 @@
       "http://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.{ext}",
       {
         attribution:
-          'Map tiles by <a href="http://stamen.com">Stamen Design</a>, <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+          "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a>",
         subdomains: "abcd",
         minZoom: 0,
         maxZoom: 18,
@@ -91,7 +89,9 @@
     }).addTo(map);
 
     secas.addTo(map);
-    secas.once("load", function(evt) {
+
+    // Center map on SECAS boundary
+    secas.once("load", function() {
       var bounds = L.latLngBounds([]);
       secas.eachFeature(function(layer) {
         var layerBounds = layer.getBounds();
@@ -100,6 +100,13 @@
 
       secasBounds = bounds;
       map.fitBounds(bounds);
+    });
+
+    // Only show SECAS boundary at certain zoom levels
+    map.on("zoomend", function (e) {
+      var zoom = e.target.getZoom();
+      if (zoom > 6) secas.removeFrom(map);
+      else secas.addTo(map);
     });
   }
 

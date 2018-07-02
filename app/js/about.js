@@ -1,13 +1,13 @@
 (function () {
-  'use strict';
+  "use strict";
 
-  var dom = require('./util').dom;
-  var template = require('../templates/about.jade');
-  var emitter = require('./mediator');
+  var dom = require("./util").dom;
+  var template = require("../templates/about.jade");
+  var emitter = require("./mediator");
 
   var options = {},
-      active = false,
-      activeClass = 'active';
+    active = false,
+    activeClass = "active";
 
   function init() {
     createModal();
@@ -16,23 +16,23 @@
   }
 
   function createModal() {
-    options.button = dom.create('button', 'about-button', document.body);
-    options.modal = dom.create('aside', 'about-modal', document.body);
-    options.modalContent = dom.create('section', 'about-content', options.modal);
-    options.close = dom.create('button', 'about-close', options.modal);
-    options.background = dom.create('div', 'about-background', document.body);
+    options.button = dom.create("button", "about-button", document.body);
+    options.modal = dom.create("aside", "about-modal", document.body);
+    options.modalContent = dom.create("section", "about-content", options.modal);
+    options.close = dom.create("button", "about-close", options.modal);
+    options.background = dom.create("div", "about-background", document.body);
 
-    options.button.innerHTML = 'About';
-    options.button.setAttribute('title', 'About this map');
-    options.close.innerHTML = 'Close';
+    options.button.innerHTML = "About";
+    options.button.setAttribute("title", "About this map");
+    options.close.innerHTML = "Close";
   }
 
   function registerHandlers() {
-    emitter.on('splash:background', addPhotoCredit);
-    options.button.addEventListener('click', toggle);
-    options.close.addEventListener('click', toggle);
-    options.background.addEventListener('click', hide);
-    document.body.addEventListener('keyup', aboutKeyup);
+    emitter.on("splash:background", addPhotoCredit);
+    options.button.addEventListener("click", toggle);
+    options.close.addEventListener("click", toggle);
+    options.background.addEventListener("click", hide);
+    document.body.addEventListener("keyup", aboutKeyup);
   }
 
   function aboutKeyup(e) {
@@ -47,7 +47,7 @@
     active = true;
     dom.addClass(options.modal, activeClass);
     dom.addClass(options.background, activeClass);
-    emitter.emit('infowindow:close');
+    emitter.emit("infowindow:close");
   }
 
   function hide() {
@@ -61,10 +61,10 @@
   }
 
   function addPhotoCredit(img) {
-    var heading = '<h3>Splash Screen Photo</h3>';
+    var heading = "<h3>Splash Screen Photo</h3>";
     var caption;
-    if (img.full) caption = '<a href="' + img.full + '">' + img.caption + '</a>';
-    else caption = '<a href="' + img.src + '">' + img.caption + '</a>';
+    if (img.full) caption = "<a href=\"" + img.full + "\">" + img.caption + "</a>";
+    else caption = "<a href=\"" + img.src + "\">" + img.caption + "</a>";
     options.modalContent.innerHTML += (heading + caption);
   }
 

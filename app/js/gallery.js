@@ -5,7 +5,6 @@
 
   var ProjectService = require("./data-access");
 
-  var _ = require("./util")._;
   var template = require("../templates/gallery.jade");
   var emitter = require("./mediator");
   var dom = require("./util").dom;

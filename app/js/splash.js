@@ -3,10 +3,8 @@
 
   var store = require("store");
 
-  var emitter = require("./mediator");
   var dom = require("./util").dom;
   var template = require("../templates/splash.jade");
-  var backgrounds = require("./splash-images");
 
   var options = {};
   var activeClass = "active";
@@ -23,16 +21,7 @@
     options.checkbox = document.querySelector(".dont-show-again");
     if (store.get("disableSplashScreen")) close();
     registerHandlers();
-    // randomImage();
   }
-
-  // function randomImage() {
-  //   var img = _.random(backgrounds);
-  //   var imgRoot = 'http://usfws.github.io/secas-story-map/images/splash-photos/';
-  //   var splash = document.querySelector('.splash-screen.active');
-  //   if (splash) splash.style.backgroundImage = 'url(' + imgRoot + img.src + ')';
-  //   emitter.emit('splash:background', img);
-  // }
 
   function setLocalStorage() {
     if (options.checkbox.checked) store.set("disableSplashScreen", true);
@@ -60,10 +49,6 @@
     active = true;
     dom.addClass(options.splash, activeClass);
     dom.addClass(options.background, activeClass);
-  }
-
-  function toggle() {
-    active ? close() : open(); //jshint ignore:line
   }
 
   module.exports.init = init;

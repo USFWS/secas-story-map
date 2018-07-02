@@ -9,9 +9,6 @@
   var about = require("./about");
   var gallery = require("./gallery");
   var data = require("./data-access");
-  var emitter = require("./mediator");
-
-  var projects;
 
   parallel(
     {

@@ -2,7 +2,6 @@
   "use strict";
 
   var xhr = require("xhr");
-  var emitter = require("./mediator");
   var _ = require("./util")._;
 
   var data = {};

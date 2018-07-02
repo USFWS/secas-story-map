@@ -1,13 +1,13 @@
 (function () {
-  'use strict';
+  "use strict";
 
-  require('classlist-polyfill');
+  require("classlist-polyfill");
 
   var _ = {
-    defaults: require('lodash.defaults'),
-    find: require('lodash.find'),
-    slugify: require('underscore.string/slugify'),
-    random: require('lodash.sample')
+    defaults: require("lodash.defaults"),
+    find: require("lodash.find"),
+    slugify: require("underscore.string/slugify"),
+    random: require("lodash.sample")
   };
 
   var dom = {
