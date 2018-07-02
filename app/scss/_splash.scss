@@ -1,6 +1,5 @@
 .splash-screen {
   height: 0;
-  opacity: 0;
   overflow-y: scroll;
   position: absolute;
 
@@ -9,7 +8,6 @@
     background-size: cover;
     height: auto;
     left: 0;
-    opacity: 0.8;
     padding: 3%;
     top: 50%;
     transform: translateY(-50%);
