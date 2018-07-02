@@ -7,12 +7,7 @@
     "transform": ["jadeify"]
   },
   "scripts": {
-<<<<<<< HEAD
     "update:projects": "curl 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRPg8QZs4nl10uYDFkv4O6wfkwssir2mamaR2CQsirW1w8UB67Elww2cB_ZFS--vepF_wr0RMlCqxVS/pub?gid=1089546384&single=true&output=csv' | csv2geojson > app/data/projects.geojson",
-=======
-    "update:projects":
-      "curl 'https://docs.google.com/spreadsheets/d/13FIjoE0x6VGYkxhp7YQpuzbTIEuFTn1AdoGeVlzDGeY/pub?gid=451142798&single=true&output=csv' | csv2geojson > app/data/projects.geojson",
->>>>>>> d2e2eb6eb7dc86a39c62fdb41a5ba2e4a43a7524
     "postupdate:projects": "npm run shrink-projects",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-js": "browserify app/js/app.js | uglifyjs -mc > dist/js/bundle.js",
@@ -26,12 +21,7 @@
       "json-minify app/data/projects.geojson > dist/data/projects.js",
     "shrink-json": "npm run shrink-geog & npm run shrink-projects",
     "preshrink-img": "rimraf dist/images/*",
-<<<<<<< HEAD
     "shrink-img": "npm run cp-splash & npm run cp-leaflet & imagemin app/images/* --out-dir=dist/images/ & node build/resize-images && node build/shrink-svg",
-=======
-    "shrink-img":
-      "npm run cp-splash & imagemin app/images/*.png dist/images/ -p & node build/resize-images && node build/shrink-svg",
->>>>>>> d2e2eb6eb7dc86a39c62fdb41a5ba2e4a43a7524
     "cp-splash": "ncp app/images/splash-photos dist/images/splash-photos",
     "cp-leaflet": "ncp app/images/leaflet/ dist/images",
     "shrink-html": "htmlmin -o dist/index.html app/index.html",
@@ -42,18 +32,9 @@
     "copy-fonts": "ncp app/fonts/ dist/fonts/",
     "prebuild": "node build/create-dist && npm run copy-fonts",
     "build": "npm run optimize & npm run build-sass & npm run build-js",
-<<<<<<< HEAD
     "prestart": "node build/create-dist && npm run copy-fonts",
     "start": "npm run optimize & npm run watch-sass & npm run watch-js & npm run serve",
     "inspect:bundle": "browserify --full-paths app/js/app.js | uglifyjs -mc | Discify --open",
-=======
-    "prestart":
-      "node build/create-dist & npm run copy-fonts & npm run build-sass",
-    "start":
-      "npm run optimize & npm run watch-sass & npm run watch-js & npm run serve",
-    "inspect:bundle":
-      "browserify --full-paths app/js/app.js | uglifyjs -mc | Discify --open",
->>>>>>> d2e2eb6eb7dc86a39c62fdb41a5ba2e4a43a7524
     "publish:demo": "npm run build && gh-pages -d dist"
   },
   "keywords": [
@@ -86,13 +67,8 @@
     "ncp": "^2.0.0",
     "node-sass": "^4.9.0",
     "rimraf": "^2.5.1",
-<<<<<<< HEAD
     "sharp": "^0.20.3",
     "uglify-js": "^3.4.0",
-=======
-    "sharp": "^0.20.1",
-    "uglifyjs": "^2.4.10",
->>>>>>> d2e2eb6eb7dc86a39c62fdb41a5ba2e4a43a7524
     "watch": "^0.17.1",
     "watchify": "^3.11.0"
   },
