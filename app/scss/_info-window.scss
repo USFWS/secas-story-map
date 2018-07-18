@@ -72,16 +72,12 @@
   border: 2px solid darken(#369, 20);
   border-radius: 5px;
   color: white;
-  font-size: 1.2em;
+  font-size: 1.2rem;
+  font-weight: normal;
   padding: 7px;
-  position: fixed;
+  position: absolute;
   right: 15px;
   top: 15px;
-
-  &::after {
-    content: "\2716";
-    font-weight: normal;
-  }
 }
 
 .detail-theme {

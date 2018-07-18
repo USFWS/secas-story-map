@@ -1,54 +1,45 @@
-(function () {
-  "use strict";
+require("classlist-polyfill");
 
-  require("classlist-polyfill");
+const _ = {
+  defaults: require("lodash.defaults"),
+  find: require("lodash.find"),
+  slugify: require("underscore.string/slugify"),
+  random: require("lodash.sample")
+};
 
-  var _ = {
-    defaults: require("lodash.defaults"),
-    find: require("lodash.find"),
-    slugify: require("underscore.string/slugify"),
-    random: require("lodash.sample")
-  };
+const dom = {
+  create: create,
+  remove: remove,
+  addClass: addClass,
+  removeClass: removeClass,
+  toggleClass: toggleClass
+};
 
-  var dom = {
-    create: create,
-    remove: remove,
-    addClass: addClass,
-    removeClass: removeClass,
-    toggleClass: toggleClass
-  };
+function create(tagName, className, container) {
+  const el = document.createElement(tagName);
+  el.className = className;
+  if (container) container.appendChild(el);
+  return el;
+}
 
-  function create(tagName, className, container) {
-    var el = document.createElement(tagName);
-    el.className = className;
+function remove(el) {
+  const parent = el.parentNode;
+  if (parent) parent.removeChild(el);
+}
 
-    if (container)
-      container.appendChild(el);
+function addClass(el, name) {
+  el.classList.add(name);
+}
 
-    return el;
-  }
+function removeClass(el, name) {
+  el.classList.remove(name);
+}
 
-  function remove(el) {
-    var parent = el.parentNode;
-    if (parent)
-      parent.removeChild(el);
-  }
+function toggleClass(el, name) {
+  el.classList.toggle(name);
+}
 
-  function addClass(el, name) {
-    el.classList.add(name);
-  }
-
-  function removeClass(el, name) {
-    el.classList.remove(name);
-  }
-
-  function toggleClass(el, name) {
-    el.classList.toggle(name);
-  }
-
-  module.exports = {
-    _ : _,
-    dom: dom
-  };
-
-})();
+module.exports = {
+  _ : _,
+  dom: dom
+};

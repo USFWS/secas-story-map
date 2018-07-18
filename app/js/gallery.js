@@ -5,7 +5,7 @@
 
   var ProjectService = require("./data-access");
 
-  var template = require("../templates/gallery.jade");
+  var template = require("../templates/gallery");
   var emitter = require("./mediator");
   var dom = require("./util").dom;
 
@@ -37,9 +37,7 @@
   }
 
   function render() {
-    options.list.innerHTML = template({
-      galleryItems: options.data
-    });
+    options.list.innerHTML = template(options.data);
   }
 
   function show() {

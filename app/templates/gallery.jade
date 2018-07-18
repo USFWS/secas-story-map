@@ -1,7 +1,0 @@
-- var _ = require('../js/util')._;
-each item in galleryItems
-  - var slug = _.slugify(item.properties.theme)
-  li.gallery-item(data-name=item.properties.title)
-    div.teaser
-      p= item.properties.title
-      img(src="./images/photos/thumbnail/" + item.properties.photo, alt="Placeholder image")
