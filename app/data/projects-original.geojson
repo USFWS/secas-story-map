@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "The Blueprint supports state coastal wetlands grant proposals",
+        "description": "<p>Several state wildlife management agencies in the South Atlantic region have used the Blueprint to support their proposals for National Coastal Wetlands Grant Program funding. So far, the Blueprint has informed seven successful applications from the Georgia Department of Natural Resources (DNR), South Carolina DNR, and North Carolina Wildlife Resources Commission.</p>\n\n<p>The Blueprint helped strengthen these proposals in the following ways:\n<ul><li>The Blueprint priorities reinforced the conservation value of the parcels</li>\n<li>The ecosystem indicators helped tell a compelling story about the natural and cultural resources that make each site unique</li>\n<li>Threat projections demonstrated the urgency of conservation action and connected the proposed acquisitions to a larger adaptation strategy</li>\n<li>Broad involvement in the Blueprint from hundreds of individuals and organizations showed how the proposal fit into a shared plan and partner conservation efforts</li></ul></p>\n\n<p>The $6.35 million awarded through these coastal wetlands grants has, in combination with partner match, secured about 7,400 acres of land and supported shoreline restoration on 10 acres. Some of the parcels acquired include:\n<ul><li>The 800-acre Altamaha Connector in Georgia, which protects critical nursery habitat for estuarine-dependent fish and crustaceans in the delta of the undammed lower Altamaha River</li>\n<li>A 400-acre site on South Fenwick Island in South Carolina, which contains not only exceptional natural resources, but also many historical features and places important in Gullah-Geechee culture</li>\n<li>A 3,000-acre riverfront parcel along the Waccamaw River in North Carolina, which will add over 1,000 acres of gamelands open to the public for hunting and fishing, and provide a new canoe/kayak landing for public access to the Waccamaw River Blue Trail</li></ul></p>\n",
+        "photo": "waccamaw-partnership-tract-christine-ellis-winyah-rivers-foundation.jpg",
+        "caption": "Waccamaw River Partnership Tract. Photo: Christine Ellis, Winyah Rivers Foundation",
+        "geography": "nc-sc-ga",
+        "shapefiles": "Delivered 6/8/18",
+        "cons": "SALCC",
+        "location": "Waccamaw Partnership Tract (point). NC, SC, GA state boundaries (shapefile)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.5686667,
+          34.1363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "The Gulf Coast Vulnerability Assessment evaluates impacts of climate change, sea-level rise, and urban growth",
+        "description": "<p>Another key product of SECAS, in addition to the Southeast Blueprint, is the Gulf Coast Vulnerability Assessment. This comprehensive report evaluates the effects of climate change, sea level rise, and urbanization on four Gulf Coast ecosystems and 11 species that depend on them. The ecosystems covered in the assessment include mangrove, oyster reef, tidal emergent marsh and barrier islands. The species are roseate spoonbill, blue crab, clapper rail, mottled duck, spotted seatrout, eastern oyster, American oystercatcher, red drum, black skimmer, Kemp’s ridley sea turtle, and Wilson’s plover.</p> \n\n<p>Of the species assessed, Kemp’s ridley sea turtle is thought to be the most vulnerable species as a result of nesting habitat loss to sea level rise, erosion, and urbanization. Tidal emergent marsh is considered to be the most vulnerable ecosystem due in part to sea level rise and erosion. In general, avian species were more vulnerable than fish because of the exposure and sensitivity of their nesting habitat loss to sea level rise, erosion, and potential increases in storm surge. </p>\n\n<p>Given the potential vulnerabilities of these species and habitats, additional research focus has been placed on them to reduce uncertainties associated with their responses to threats of sea level rise, urbanization, and other land use change. Further, the apparent resilience of some species and habitats to these same stressors has provided greater confidence to managers implementing restoration projects targeting these species and habitats. Additional work is ongoing to further refine the GCVA to improve and expand its utility in decision-making.</p>\n",
+        "photo": "gcp-lcc-coarse-filter-lcd.jpg",
+        "caption": "Kemp's Ridley sea turtle - a species vulnerable to sea level rise. Photo: Northeast Region Sea Turtle Stranding Network",
+        "geography": "wetland-migration",
+        "shapefiles": "Use existing",
+        "cons": "GCP LCC",
+        "location": "TX Gulf coast south of Houston (~ Aransas NWR)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -97.2474155,
+          28.1011396
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Multiple organizations in South Carolina use the Blueprint to guide statewide conservation priorities",
+        "description": "As a plan for shared conservation action, the Blueprint is helping organizations across different sectors of South Carolina align their efforts and make a bigger collective impact to sustain natural and cultural resources.</p>\n\n<p>The South Carolina chapter of The Nature Conservancy (TNC) used the Blueprint as the foundation for an update to their Conservation Vision. This priority map will guide TNC’s conservation efforts and inform the work of partners, like local land trusts, statewide. They filtered down the Blueprint to identify the hubs, corridors, and buffers and restoration areas that align with their mission. TNC has already used that updated vision to support the successful reauthorization of the SC Conservation Bank. In particular, the Blueprint helped communicate to the state legislature that the conservation community has come together around a shared set of priorities and implemented projects strategically. It also illustrated how using a data-driven conservation plan can ensure funding is targeted in a rigorous way.</p>\n\n<p>In addition, the South Carolina Department of Natural Resources (DNR) is exploring using the Blueprint as the basis for their next State Wildlife Action Plan (SWAP) focus areas map. SC DNR values the Blueprint for several reasons:</p>\n<ul><li>It is an existing dataset that combines many different data layers into one priority map</li>\n<li>It has been thoroughly vetted by a diverse group of conservation professionals for inclusiveness and accuracy</li>\n<li>It allows the agency to identify focus areas that span state lines, better coordinating across boundaries</li>\n<li>It is already in the public domain</li>\n<li>It doesn’t display the parcels of individual private landowners</li>\n<li>It is generated through a transparent and replicable geospatial modelling process</li></ul></p>\n\n<p>Because the SC Forestry Commission also draws on the SWAP focus areas to craft South Carolina's Forest Resource Assessment and Resource Strategy (or the SC Forest Action Plan), the Blueprint may ultimately integrate with other agency priorities.</p>\n",
+        "photo": "tarpley-creek-congaree-national-park-NPS.jpg",
+        "caption": "Tarpley Creek at Congaree National Park in South Carolina. Photo: National Park Service",
+        "geography": "sc",
+        "shapefiles": "Delivered 6/8/18",
+        "cons": "SALCC",
+        "location": "State of SC"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -80.90102,
+          33.918742
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "The Blueprint helps bring new longleaf fire funds to the South Atlantic",
+        "description": "<p>The Blueprint, ecosystem indicators, and strong partner relationships in SECAS strengthened a successful proposal that brought in nearly $3 million dollars for prescribed fire. All other funding from this national program, the Department of Interior’s Wildland Fire Resilient Landscapes, went to the Western United States. SECAS played in important role in bringing some of that funding east of the Mississippi River. The project supported prescribed burning in priority longleaf pine focus areas across the South Atlantic and helped break prescribed fire records in the region! Staff, training, and aerial support were anchored around key longleaf refuges and parks, maintaining and restoring fire not just on federal lands, but on nearby state, private, and non-profit lands as well.</p> \r\n\r\n<p>This project has benefited the fire-dependent longleaf pine ecosystem, including many at-risk species like the red-cockaded woodpecker. The ecosystem indicators also served as shared measures of the project’s success, demonstrating the impact of the burns on the overall integrity of the pine and prairie system.</p>\r\n",
+        "photo": "salcc-longleaf-pine-prescribed-burn-usda.jpg",
+        "caption": "Longleaf pine prescribed burn. Photo: USDA FS Southern Research Station",
+        "geography": "fire",
+        "shapefiles": "Delivered 6/13/18",
+        "cons": "SALCC",
+        "location": "SALCC geography (shapefile). Okefenokee NWR (point)."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.306184,
+          30.801461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "The Blueprint benefits threatened frosted flatwoods salamanders in the Big Bend of Florida",
+        "description": "<p>The Blueprint helped support a successful Cooperative Recovery Initiative grant proposal to conserve threatened frosted flatwoods salamander populations on St. Marks National Wildlife Refuge. The funding will support prescribed burning, salamander surveys, feral hog control, and water quality monitoring. The decline of the salamander is a local symptom of the broader decline in longleaf pine communities across the Southeast. The area around St. Marks is a high priority in the Blueprint and scores highly in the South Atlantic pine and prairie amphibians indicator.</p>\n\n<p>In addition, Wildland Fire Resilient Landscapes funding supported by the Blueprint went toward growing season burns at St. Marks. Growing season burns are critical for maintaining frosted flatwoods salamander habitat because the species relies on ephemeral wetlands that can be overtaken by woody vegetation in the absence of fire, and breeding occurs in the dormant season. Short-term monitoring suggested refuge salamander populations responded positively to those burns.</p>\n",
+        "photo": "frosted-flatwoods-salamander-st-marks-alan-cressler.jpg",
+        "caption": "Frosted flatwoods salamander in advanced larval stage at St. Marks National Wildlife Refuge in Florida. Photo: Alan Cressler, USGS",
+        "geography": "stmarks",
+        "shapefiles": "Delivered 6/8/18",
+        "cons": "SALCC",
+        "location": "St. Mark's NWR in FL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.24395,
+          30.1379667
+        ]
+      }
+    }
+  ]
+}

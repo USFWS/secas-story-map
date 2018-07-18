@@ -100,6 +100,85 @@
           30.1379667
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Addressing Gulf Hypoxia and connecting with the Midwest",
+        "description": "<p>Some complex problems, like Gulf Hypoxia, require coordinated action across multiple regions of the United States. Watersheds across the Midwest and Mississippi River Valley contribute excess nutrients to the Gulf of Mexico, creating a hypoxic zone or “dead zone” that affects many  commercially-important species and the fishing industries that depend on them. The Southeast Blueprint connects to the conservation priorities of the Gulf Hypoxia Initiative (GHI) Blueprint through an integration in Missouri, a critical zone of overlap. By linking Midwestern and Southern approaches, the Blueprint helps move closer to an integrated conservation approach for the entire Mississippi River Basin.</p> \n\n<p>The Blueprint is starting to shape conservation actions in the Mississippi River Basin, like this example from Missouri:\n<ul><li>The Middle Mississippi River Partnership is combining data from the GHI with data from the Southeast Blueprint and other sources to identify high priority sites for restoration of wetlands, grasslands, and forests within the floodplain of the Mississippi River between its confluence with the Missouri and Ohio rivers. This ongoing effort is expected to help bring in private, state and federal investments in habitat to support terrestrial and aquatic wildlife populations.</ul></li></p>",
+        "photo": "ghi-blueprint.jpg",
+        "caption": "Sum of conservation and watershed interests within the Mississippi River Basin from the Gulf Coast Hypoxia Initiative.",
+        "geography": "ms-river-basin",
+        "shapefiles": "",
+        "cons": "",
+        "location": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.643,
+          38.552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Connecting Southeastern and Northeastern approaches to conservation",
+        "description": "<p>In Virginia, the Blueprint is playing an important role in figuring out how to connect Southeastern and Northeastern approaches to conservation. In this special integration zone, the Blueprint integrates the South Atlantic Conservation Blueprint, the Appalachian Naturescape design, and the Northeastern Nature’s Network. At this point, the integration is fairly simple, but approaches will continue to improve over time. These connections help move one step closer to an integrated Blueprint that covers the entire country.</p>",
+        "photo": "VirginiaBridge.jpg",
+        "caption": "Trestle bridge along the New River Trail in Virginia. Photo: Virginia State Parks/Flickr.",
+        "geography": "virginia",
+        "shapefiles": "",
+        "cons": "",
+        "location": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -78.355,
+          37.651
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Connecting Southeastern and Western approaches to conservation",
+        "description": "<p>In Texas, the Blueprint is playing an important role in figuring how to connect Eastern and Western approaches to conservation. In this special integration zone, work is underway to fill in the rest of Texas in the Blueprint by seamlessly linking with the Western Association of Fish and Wildlife Agencies’ (WAFWA) Crucial Habitat Assessment Tool (CHAT), which is broadly used throughout the Western United States. CHAT was developed to bring greater certainty and predictability to planning efforts by establishing a common starting point for discussing the intersection of development and wildlife. It is designed to reduce conflicts and surprises while ensuring wildlife values are better incorporated into land use planning.</p> \n\n<p>The initial CHAT for Texas combines both aquatic and terrestrial priorities. Integrating the CHAT into the Southeast Blueprint helps move one step closer to a Blueprint that covers the entire country.</p>",
+        "photo": "BigBend.jpg",
+        "caption": "Big Bend National Park in Texas. Photo: Jasperdo/Flickr.",
+        "geography": "texas",
+        "shapefiles": "",
+        "cons": "",
+        "location": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -98.652,
+          31.305
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Arkansas Game and Fish Commission uses the Blueprint in State Wildlife Action Plan update",
+        "description": "<p>The Arkansas Game and Fish Commission is using the Southeast Blueprint and other complementary datasets to delineate their Conservation Opportunity Areas. These maps are part of an update of the Arkansas State Wildlife Action Plan and will guide plan implementation.</p>",
+        "photo": "arkansas-wildlife-action-plan.jpg",
+        "caption": "Images from the cover of the updated 2015 Arkansas SWAP.",
+        "geography": "arkansas",
+        "shapefiles": "",
+        "cons": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.638,
+          34.959
+        ]
+      }
     }
   ]
 }
