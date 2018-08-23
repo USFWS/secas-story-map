@@ -110,7 +110,7 @@
         "caption": "Sum of conservation and watershed interests within the Mississippi River Basin from the Gulf Coast Hypoxia Initiative.",
         "geography": "ms-river-basin",
         "shapefiles": "",
-        "cons": "",
+        "cons": "Multi-LCC",
         "location": ""
       },
       "geometry": {
@@ -130,7 +130,7 @@
         "caption": "Trestle bridge along the New River Trail in Virginia. Photo: Virginia State Parks/Flickr.",
         "geography": "virginia",
         "shapefiles": "",
-        "cons": "",
+        "cons": "Multi-LCC",
         "location": ""
       },
       "geometry": {
@@ -150,7 +150,7 @@
         "caption": "Big Bend National Park in Texas. Photo: Jasperdo/Flickr.",
         "geography": "texas",
         "shapefiles": "",
-        "cons": "",
+        "cons": "Multi-LCC",
         "location": ""
       },
       "geometry": {
@@ -165,18 +165,98 @@
       "type": "Feature",
       "properties": {
         "title": "Arkansas Game and Fish Commission uses the Blueprint in State Wildlife Action Plan update",
-        "description": "<p>The Arkansas Game and Fish Commission is using the Southeast Blueprint and other complementary datasets to delineate their Conservation Opportunity Areas. These maps are part of an update of the Arkansas State Wildlife Action Plan and will guide plan implementation.</p>",
+        "description": "<p>The Arkansas Game and Fish Commission is using the Southeast Blueprint and other complementary datasets to delineate their Conservation Opportunity Areas. These maps are part of an update of the Arkansas State Wildlife Action Plan and will guide plan implementation.</p>\n\n<p>This effort is ongoing, so more details will be added as progress continues.</p>",
         "photo": "arkansas-wildlife-action-plan.jpg",
         "caption": "Images from the cover of the updated 2015 Arkansas SWAP.",
         "geography": "arkansas",
         "shapefiles": "",
-        "cons": ""
+        "cons": "GCPO LCC",
+        "location": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -92.638,
           34.959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Helping identify priority areas for keeping forests as forests into the future",
+        "description": "<p>The Keeping Forests as Forests initiative (KFAF) is a collaborative program of the U.S. Forest Service. KFAF is using the results of a project called Mapping the South’s Protected Forests of the Future to identify priority watersheds where partners will focus efforts to preserve and restore forestland in the Southeast. The Blueprint plays a significant role in this effort by depicting regional conservation priorities. The project combines the Blueprint with complementary data from state and federal agencies, nonprofit organizations, private industry, and other conservation partnerships. It incorporates data about protected lands, conservation priorities, development and climate threats, economic value, water quality, and farmland and wetland restoration potential. The project was envisioned to build on the work of SECAS by synthesizing spatial information on the best areas for forest retention and restoration across the region.</p>\n\n<p>KFAF’s priority watersheds will serve as the initial focus areas for achieving their goal of conserving 70% of historic forestlands across the Southeast. In the words of KFAF coordinator, Daniel McInnis, “I do envision that this product, combined with the SECAS Blueprint and other work that’s been done, will help inform decisions on where to focus our efforts and where points of leverage exist. This particular future protected forest layer will be critical because we could potentially leverage USFS authorities and Keeping Forests as Forests partners’ intersecting priorities alongside these areas slated for protection” (<a href=\"https://www.linkedin.com/pulse/mapping-souths-protected-forests-future-k-gregg-elliott\">from 2017 article by K. Gregg Elliot</a>).</p>",
+        "photo": "kfaf.jpg",
+        "caption": "Sandhill Crane Wildlife Refuge in Mississippi. Photo: Toby Gray, Mississippi State University",
+        "geography": "kfaf",
+        "shapefiles": "KFAF_states.shp",
+        "cons": "",
+        "location": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.66655,
+          32.1485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Facilitating aquatic connectivity within a priority watershed in Puerto Rico",
+        "description": "<p>In areas where conservation resources are very limited, like the U.S. Caribbean, bringing together partners to focus on shared priorities is particularly important. The Southeast Blueprint highlights two focal watersheds in Puerto Rico: the Rio Grande de Arecibo and Rio Herrera to Cabezas de San Juan. The Rio Grande de Arecibo was selected as the primary focal watershed due to the importance of its groundwater and surface water reservoir resources and its potential for improving connectivity between lands and waters. In addition, the need for a shared, cross-organization plan in that region positioned a collaborative effort like SECAS to fill an important gap.</p>\r\n\r\n<p>Partners identified enhancing aquatic connectivity as a key conservation action within the watershed, and SECAS has helped make progress by facilitating the identification of problematic dams and culverts. The process of obtaining permits and conducting an environmental evaluation is underway for a dam removal scheduled for the summer of 2019.</p> \r\n\r\n<p>SECAS will continue to help coordinate and support conservation actions in both focal watersheds to implement the Blueprint in the Caribbean.</p>",
+        "photo": "caribbean-focal-watersheds.jpg",
+        "caption": "Caribbean focal watersheds in the Southeast Blueprint.",
+        "geography": "pr-watershed",
+        "shapefiles": "PuertoRicoFocalWatersheds.shp",
+        "cons": "",
+        "location": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -66.6798,
+          18.253633
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Ecosystem report cards are helping develop an explicit goal for SECAS",
+        "description": "<p>Several regions within SECAS have developed ecosystem report cards to assess the health of our lands and waters. For example:</p> \n<ul><li>The 2018 <a href=\"http://applcc.org/projects/trb/resources/tennessee-river-basin-report-card\">Tennessee River Basin report card</a> uses metrics of ecosystem condition, stressors, and management actions to score each watershed within the basin. Many of these datasets also inform the priorities in the Blueprint.</li>\n<li>The 2015 <a href=\"http://www.southatlanticlcc.org/state-of-the-south-atlantic/\">State of the South Atlantic</a> uses a similar approach to assess the integrity of the natural and cultural resources of the South Atlantic region. It measures and scores the current condition of the South Atlantic ecosystem indicators, which also drive the Blueprint priorities.</li></ul>\n<p>These report cards are intended to help guide decisions about how best to focus conservation action and investment to sustain the natural resources that fish, wildlife, and people rely on. They set a baseline for future assessments so the conservation community can track trends and demonstrate the impacts of on-the-ground actions. They are also designed help broad audiences understand the health of their region’s ecosystems and the need for conservation.</p>\n<p>SECAS is using these and many other regional and national assessments to inform an explicit goal for ecosystem condition that clearly defines what we’re working together to achieve through this partnership. Rallying the conservation community around a shared objective can inspire change and promote accountability. An explicit goal will help SECAS partners bring in new funding, defend existing funding sources, and align ongoing work more efficiently. By providing a benchmark for ecosystem health today, these regional report cards ensure we set an objective that is measurable and achievable, and outline a framework for monitoring progress year by year.</p>\n",
+        "photo": "report-card-tennessee-river-basin.jpg",
+        "caption": "This report card gives the Tennessee River Basin a C grade for a \"moderately healthy basin\".",
+        "geography": "report-card",
+        "shapefiles": "EcosystemReportCards",
+        "cons": "",
+        "location": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.85,
+          35.815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "The Blueprint helps restore longleaf pine across the Southeast",
+        "description": "<p>The Blueprint is contributing to the restoration of longleaf pine across its historic range by helping Longleaf Implementation Teams (LITs) prioritize their conservation and management efforts. Longleaf pine forests, with towering trees and open, grassy understories, once spanned 90 million acres from Virginia to Texas. Fire suppression, deforestation, and land-use changes reduced it to only 3% of its former range by the late 1990s. Thanks in part to <a href=\"https://longleafalliance.org/\">The Longleaf Alliance</a> and <a href=\"http://americaslongleaf.org/\">America’s Longleaf Restoration Initiative</a>, the longleaf pine forest is now on its way back to prominence. Seventeen LITs are currently working throughout nine states to manage existing longleaf forests and implement restoration projects. The teams are made up of government agencies, conservation organizations, industry, and private landowners, all sharing resources, ideas and best practices. LITs are drafting conservation plans, identifying collective goals and developing landscape-scale maps to help assess, visualize and track collective longleaf restoration priorities. America’s Longleaf and the National Fish and Wildlife Foundation are encouraging LITs to share these priorities in a <a href=\"https://storymap.longleafalliance.org/roadmap-to-restore-longleaf-pine/\">“Longleaf Restoration Road Map”</a> to improve range-wide communication and planning.</p> \n\n<p>The Longleaf Alliance has been working closely with LITs and the larger conservation community to collect relevant spatial data, facilitate discussions, and develop priority maps. The Blueprint proved instrumental in identifying potential high-quality habitat areas for open pine systems outside of partner lands. It also supported data compatibility across the range. In particular, three LITs have applied the Blueprint as a key element in their mapping process so far:</p>\n\n<ul><li>Chattahoochee Fall Line Conservation Partnership (GA and AL)</li>\n<li>SoLo-ACE Longleaf Partnership (SC)</li>\n<li>DeSoto/Camp-Shelby Local Implementation Team (MS and AL)</li></ul>\n\n<p>These projects used the Blueprint to help map strategic restoration targets to achieve tangible conservation outcomes and support range-wide conservation planning efforts for longleaf. The Blueprint will continue to inform targeted longleaf restoration and management as more LITs identify priority areas in the coming years.</p>\n",
+        "photo": "a-walk-in-oldgrowth-longleaf-Randy-Tate.jpg",
+        "caption": "A walk in old growth longleaf. Photo: Randy Tate.",
+        "geography": "longleaf",
+        "shapefiles": "3LIT_AOI_080718_LLA",
+        "cons": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.006,
+          31.043
         ]
       }
     }
