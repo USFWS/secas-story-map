@@ -8,8 +8,8 @@ L.Icon.Default.imagePath = "./images/";
 
 let map;
 let options;
-let secasBounds;
 let geogLayer;
+let initialBounds;
 const defaults = {
   zoom: 5,
   element: "map"
@@ -23,11 +23,11 @@ const secas = esri.featureLayer({
 
 function init(opts) {
   options = _.defaults({}, opts, defaults);
-  createMap();
+  initialBounds = L.geoJSON(opts.projects).getBounds();
+  createMap(initialBounds);
   createZoomToFullExtent();
   addBasemap();
   registerHandlers();
-  secasBounds = L.geoJSON(options.secas).getBounds();
   if (options.projects) addLayers();
 }
 
@@ -41,11 +41,9 @@ function destroy() {
   emitter.off("project:click", displayGeography);
 }
 
-function createMap() {
-  map = L.map(options.element, {
-    center: options.center,
-    zoom: options.zoom
-  });
+function createMap(bounds) {
+  map = L.map(options.element);
+  map.fitBounds(bounds, { padding: [0, 200] });
 }
 
 function createZoomToFullExtent() {
@@ -89,16 +87,16 @@ function addLayers() {
   secas.addTo(map);
 
   // Center map on SECAS boundary
-  secas.once("load", () =>  {
-    const bounds = L.latLngBounds([]);
-    secas.eachFeature(layer => {
-      const layerBounds = layer.getBounds();
-      bounds.extend(layerBounds);
-    });
+  // secas.once("load", () =>  {
+  //   const bounds = L.latLngBounds([]);
+  //   secas.eachFeature(layer => {
+  //     const layerBounds = layer.getBounds();
+  //     bounds.extend(layerBounds);
+  //   });
 
-    secasBounds = bounds;
-    map.fitBounds(bounds, { padding: [0, 50] });
-  });
+  //   secasBounds = bounds;
+  //   map.fitBounds(bounds, { padding: [0, 50] });
+  // });
 
   // Only show SECAS boundary at certain zoom levels
   map.on("zoomend", e => {
@@ -128,7 +126,7 @@ function displayGeography(office) {
 }
 
 function zoomToFullExtent() {
-  map.fitBounds(secasBounds, {
+  map.flyToBounds(initialBounds, {
     paddingBottomRight: [0, 300]
   });
   emitter.emit("zoomtofullextent");
