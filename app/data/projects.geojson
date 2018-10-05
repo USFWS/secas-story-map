@@ -196,8 +196,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -89.66655,
-          32.1485
+          -91.088,
+          31.473
         ]
       }
     },
@@ -250,13 +250,33 @@
         "caption": "A walk in old growth longleaf. Photo: Randy Tate.",
         "geography": "longleaf",
         "shapefiles": "3LIT_AOI_080718_LLA",
+        "cons": "",
+        "location": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -85.395,
+          32.383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Helping coastal communities build resilience by planning for wetland migration ",
+        "description": "<p>Sea-level rise threatens a variety of ecosystems along the Gulf of Mexico, but tidal saline wetlands like mangrove forests, salt marshes, and salt flats are among the most vulnerable. Given sufficient time and space, these wetlands can migrate inland in response to sea-level rise. In support of SECAS, and to better integrate coastal adaptation efforts across the Gulf, the U.S. Geological Survey (USGS) developed a dataset predicting where inland migration of tidal saline wetlands is expected to occur under different sea-level rise and urbanization scenarios. It identifies where migration is possible due to the absence of barriers, as well as where it’s not due to urban growth and levees. The data is intended to inform the conservation of coastal landscapes as well as help sustain the ecosystem goods and services they provide, such as buffering storm impacts and providing nursery habitat for commercial fisheries. You can <a href=\"http://gcpolcc.databasin.org/galleries/bbfff0152bb14aa5aea5012d02f3156f\">view the data online in the Tidal Saline Wetland Gallery on the Gulf Coast Plains and Ozarks CPA</a>, or <a href=\"https://www.sciencebase.gov/catalog/item/55f742a8e4b0477df11c0a2b\">download the data from ScienceBase</a>.</p>\n\n<p>The Nature Conservancy’s (TNC) Gulf of Mexico Program partnered with USGS to help communities across the Gulf coast use the wetland migration data and other complementary coastal adaptation resources. This effort, also supported in part by staff and funding from the U.S. Fish and Wildlife Service’s Science Applications program, furthered TNC’s work to increase the use of natural infrastructure in the Gulf region. TNC and USGS hosted a series of workshops in the summer of 2017 to help local governments, land trusts and resource managers identify opportunities to protect open space and wetland migration corridors through land acquisition, land use planning, and the National Flood Insurance Program’s Community Rating System. Representatives from 41 cities and 26 counties and parishes attended to better understand how to use the wetland migration projections and sea-level rise information in their decision-making. After the workshops, TNC and USGS provided custom data products to 68 attendees who requested additional data and maps.</p> \n\n<p>In Charlotte Harbor, the workshop led to discussions about a mangrove restoration project, in    the form of a living shoreline, along a seawall in front of a Sheraton Hotel. The hotel is a partner in the planning process and helped fund a mangrove shoreline design in partnership with the City of Punta Gorda, TNC, and the Charlotte Harbor National Estuary Program. The partners continue to pursue funding for implementation of this project.</p>\n",
+        "photo": "gcpo-lcc-grand-bay-marsh-edge.jpg",
+        "caption": "Grand Bay marsh edge. Photo: USFWS",
+        "geography": "wetland-migration",
+        "shapefiles": "Delivered",
         "cons": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -89.006,
-          31.043
+          -87.502,
+          30.3031
         ]
       }
     }
