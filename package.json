@@ -16,7 +16,7 @@
     ]
   },
   "scripts": {
-    "update:projects": "curl 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRPg8QZs4nl10uYDFkv4O6wfkwssir2mamaR2CQsirW1w8UB67Elww2cB_ZFS--vepF_wr0RMlCqxVS/pub?gid=1617473161&single=true&output=csv' | csv2geojson > app/data/projects.geojson",
+    "update:projects": "curl -L 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRPg8QZs4nl10uYDFkv4O6wfkwssir2mamaR2CQsirW1w8UB67Elww2cB_ZFS--vepF_wr0RMlCqxVS/pub?output=csv' | csv2geojson > app/data/projects.geojson",
     "postupdate:projects": "npm run shrink-projects",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-js": "browserify app/js/app.js | uglifyjs -mc > dist/js/bundle.js",
