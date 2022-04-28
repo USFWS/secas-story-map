@@ -80,7 +80,7 @@
     "watchify": "^3.11.1"
   },
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^2.6.4",
     "classlist-polyfill": "^1.2.0",
     "esri-leaflet": "^2.1.4",
     "events": "^3.0.0",
