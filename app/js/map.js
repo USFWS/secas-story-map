@@ -63,10 +63,10 @@ function createZoomToFullExtent() {
 
 function addBasemap() {
   L.tileLayer(
-    "https://server.arcgisonline.com/ArcGIS/rest/services/NatGeo_World_Map/MapServer/tile/{z}/{y}/{x}",
+    "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
     {
       attribution:
-        "Tiles &copy; Esri &mdash; National Geographic, Esri, DeLorme, NAVTEQ, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC",
+        "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
       subdomains: "abcd",
       minZoom: 0,
       maxZoom: 18,
