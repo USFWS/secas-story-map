@@ -17,7 +17,7 @@ const defaults = {
 
 const secas = esri.featureLayer({
   url:
-    "https://services.arcgis.com/QVENGdaPbd4LUkLV/ArcGIS/rest/services/SECAS_Boundary/FeatureServer/0",
+    "https://services.arcgis.com/QVENGdaPbd4LUkLV/arcgis/rest/services/SECAS_Boundary/FeatureServer/0",
   style: () => ({ color: "#368b37", weight: 2 })
 });
 
