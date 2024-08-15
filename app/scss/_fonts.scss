@@ -13,15 +13,11 @@
 }
 
 @font-face {
-    font-family: 'Roboto Slab';
-    src: url('../fonts/robotoslab-regular.eot');
-    src: url('../fonts/robotoslab-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/robotoslab-regular.woff2') format('woff2'),
-         url('../fonts/robotoslab-regular.woff') format('woff'),
-         url('../fonts/robotoslab-regular.ttf') format('truetype'),
-         url('../fonts/robotoslab-regular.svg#open_sansregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Raleway';
+  src: url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+       url('../fonts/raleway-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
 }
 
 html {
@@ -34,5 +30,5 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto Slab', Georgia, 'Times New Roman', serif;
+  font-family: 'Raleway', Georgia, 'Times New Roman', serif;
 }
