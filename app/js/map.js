@@ -43,7 +43,7 @@ function destroy() {
 
 function createMap(bounds) {
   map = L.map(options.element);
-  map.fitBounds(bounds, { padding: [0, 200] });
+  map.fitBounds(bounds, { paddingBottomRight: [0, 200] });
 }
 
 function createZoomToFullExtent() {
@@ -99,11 +99,11 @@ function addLayers() {
   // });
 
   // Only show SECAS boundary at certain zoom levels
-  map.on("zoomend", e => {
-    const zoom = e.target.getZoom();
-    if (zoom > 6) secas.removeFrom(map);
-    else secas.addTo(map);
-  });
+  // map.on("zoomend", e => {
+  //   const zoom = e.target.getZoom();
+  //   if (zoom > 6) secas.removeFrom(map);
+  //   else secas.addTo(map);
+  // });
 }
 
 function onMarkerClick(e) {
@@ -120,14 +120,14 @@ function displayGeography(office) {
 
   // Decide if we should make room on the map for the infowindow
   if (clientWidth > 1000)
-    map.fitBounds(currentGeog.getBounds(), { paddingBottomRight: [500, 0] });
+    map.fitBounds(currentGeog.getBounds(), { paddingBottomRight: [0, 300] });
   else map.fitBounds(currentGeog.getBounds());
   emitter.emit("gallery:close");
 }
 
 function zoomToFullExtent() {
   map.flyToBounds(initialBounds, {
-    paddingBottomRight: [0, 300]
+    paddingBottomRight: [0, 200]
   });
   emitter.emit("zoomtofullextent");
 }
