@@ -1,7 +1,7 @@
 const parallel = require("async/parallel");
 
 const map = require("./map");
-const splash = require("./splash");
+// const splash = require("./splash");
 const infoWindow = require("./infowindow");
 const about = require("./about");
 const gallery = require("./gallery");
@@ -15,7 +15,7 @@ parallel(
   function(err, results) {
     infoWindow.init();
     about.init();
-    splash.init();
+    // splash.init();
 
     map.init({
       center: [33.477, -86.131],
