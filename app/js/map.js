@@ -98,7 +98,7 @@ function addLayers() {
   //   map.fitBounds(bounds, { padding: [0, 50] });
   // });
 
-  Only show SECAS boundary at certain zoom levels
+  // Only show SECAS boundary at certain zoom levels
   map.on("zoomend", e => {
     const zoom = e.target.getZoom();
     if (zoom > 6) secas.removeFrom(map);
