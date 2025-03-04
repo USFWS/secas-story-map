@@ -62,17 +62,10 @@ function createZoomToFullExtent() {
 }
 
 function addBasemap() {
-  L.tileLayer(
-    "https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",
-    {
-      attribution:
-        "Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ",
-      subdomains: "abcd",
-      minZoom: 0,
-      maxZoom: 18,
-      ext: "png"
-    }
-  ).addTo(map);
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+  }).addTo(map);
 }
 
 function addLayers() {
